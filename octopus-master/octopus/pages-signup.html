@@ -49,65 +49,88 @@
 					</div>
 					<div class="panel-body">
 						<form>
-							<div class="form-group mb-lg">
-								<div class="row">
-									<div class="col-sm-6 mb-lg">
-										<label>Atlética</label>
-										<input name="name-atletica" type="text" class="form-control input-lg" />	
-									</div>
-									<div class="col-sm-6 mb-lg">
-											<label>Presidente</label>
-											<input name="presidente-atletica" type="text" class="form-control input-lg" />
-									</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" data-plugin-multiselect id="ms_example1">
+										<option value="cefet-bh" >CEFET BH </option>
+										<option value="cefet-cvo">CEFET CURVELO</option>
+										<option value="fasar">FASAR</option>
+										<option value="fumec">FUMEC</option>
+										<option value="ibmec">IBMEC</option>
+										<option value="ifjf">IFJF</option>
+										<option value="igmg-congonhas">IGMG Congonhas</option>
+										<option value="ifmg-gv">IFMG GV</option>
+										<option value="newtow-paiva">NEWTON PAIVA</option>
+										<option value="puc">PUC</option>
+										<option value="uemg-jm" >UEMG JM</option>
+										<option value="uemg-pss">UEMG PSS</option>
+										<option value="ufjf">UFJF</option>
+										<option value="ufla">UFLA</option>
+										<option value="ufmg">UFMG</option>
+										<option value="ufmt">UFMT</option>
+										<option value="ufop-jm">UFOP JM</option>
+										<option value="ufsj">UFSJ</option>
+										<option value="ufsj-sl">UFSJ SL</option>
+										<option value="uftm">UFTM</option>
+										<option value="ufv" >UFV</option>
+										<option value="ufvjm-dtna">UFVJM DTNA</option>
+										<option value="ufvjm-to">UFVJM TO</option>
+										<option value="unifei">UNIFEI</option>
+										<option value="unilavras">UNILAVRAS</option>
+										<option value="unimontes">UNIMONTES</option>
+										<option value="cefet-divinopolis">CEFET DIVINÓPOLIS</option>
+									</select>
 								</div>
-								
-							</div>
-							
-							<div class="form-group mb-lg">
-								<label>Instituição</label>
-								<input name="name-instituicao" type="text" class="form-control input-lg" />
 							</div>
 
 							<div class="form-group mb-lg">
-								<label>E-mail</label>
+								<label>Presidente<span class="required">*</span></label>
+								<input name="nome-presidente" type="name" class="form-control input-lg" />
+							</div>
+
+							<div class="form-group mb-lg">
+								<label>Telefone<span class="required">*</span></label>
+								<input name="phone" type="number" class="form-control input-lg" />
+							</div>
+
+							<div class="form-group mb-lg">
+								<label>Cidade<span class="required">*</span></label>
+								<input name="city" type="city" class="form-control input-lg" />
+							</div>
+
+							<div class="form-group mb-lg">
+								<label>CNPJ<span class="required">*</span></label>
+								<input name="cpnj" type="cnpj" class="form-control input-lg" />
+							</div>
+
+							<div class="form-group mb-lg">
+								<label>E-mail<span class="required">*</span></label>
 								<input name="email" type="email" class="form-control input-lg" />
 							</div>
 
 							<div class="form-group mb-none">
 								<div class="row">
 									<div class="col-sm-6 mb-lg">
-										<label>Senha</label>
+										<label>Senha<span class="required">*</span></label>
 										<input name="pwd" type="password" class="form-control input-lg" />
 									</div>
 									<div class="col-sm-6 mb-lg">
-										<label>Confirmação de senha</label>
+										<label>Confirmação de senha<span class="required">*</span></label>
 										<input name="pwd_confirm" type="password" class="form-control input-lg" />
 									</div>
 								</div>
 							</div>
 
 							<div class="row">
-								<div class="col-sm-8">
-									<div class="checkbox-custom checkbox-default">
-										<input id="AgreeTerms" name="agreeterms" type="checkbox"/>
-										<label for="AgreeTerms">Eu concordo com os <a href="#">termos de uso</a></label>
-									</div>
-								</div>
+								<div class="col-sm-4 text-right"></div>
 								<div class="col-sm-4 text-right">
 									<button type="submit" class="btn btn-primary hidden-xs">Inscrever-se</button>
 									<button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Inscrever-se</button>
 								</div>
 							</div>
-<!--
-							<span class="mt-lg mb-lg line-thru text-center text-uppercase">
-								<span>or</span>
-							</span>
-
-							<div class="mb-xs text-center">
-								<a class="btn btn-facebook mb-md ml-xs mr-xs">Connect with <i class="fa fa-facebook"></i></a>
-								<a class="btn btn-twitter mb-md ml-xs mr-xs">Connect with <i class="fa fa-twitter"></i></a>
-							</div>
--->
+							<p></p>
 							<p class="text-center">Já tem uma conta? <a href="../../Login_v1/index.html">Entrar!</a>
 
 						</form>
