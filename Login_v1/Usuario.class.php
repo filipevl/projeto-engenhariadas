@@ -20,5 +20,23 @@
                 return false;
             }
         }
+        public function logged($id){
+            global $conn;
+ 
+            $array = array();
+
+            $sql = "SELECT nome FROM usuarios WHERE id = :idusuario";
+            $sql = $conn->prepare($sql);
+            $sql->bindValue("idusuario", $id);
+            $sql->execute();
+
+            if($sql->rowCount() > 0){
+                $array = $sql->fetch();
+                 
+            }
+
+            return $array;
+        }
+
     }
 ?>
