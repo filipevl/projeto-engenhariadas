@@ -39,7 +39,7 @@
 
 				<form method="POST" action="logar.php" class="login100-form validate-form">
 					<span class="login100-form-title">
-						Engenhariadas 2020 
+						Engenharíadas 2020
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "É necessário um email válido: ex@abc.xyz">
@@ -60,20 +60,19 @@
 					
 					<div class="container-login100-form-btn">
 						<input class="login100-form-btn" type="submit" value="Entrar">
-
 					</div>
 
 					<div class="text-center p-t-12">
 						<span class="txt1">
 							Esqueci
 						</span>
-						<a class="txt2" href="#">
+						<a class="txt2" href="painel/pages-recover-password.html">
 							E-mail/Senha
 						</a>
 					</div>
 
-					<div class="text-center p-t-136">
-						<a class="txt2" href="painel/pages-signup.html">
+					<div class="text-center .p-t-100">
+						<a class="txt2" href="painel/paginas/solicitar-cadastro.html">
 							Crie sua conta
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>

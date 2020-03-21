@@ -3,16 +3,16 @@
 
 	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
 <!doctype html>
-<html lang="pt-br" class="fixed">
+<html class="fixed">
 	<head>
 
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
-		<title>Dashboard | JSOFT Themes | JSOFT-Admin</title>
-		<meta name="keywords" content="HTML5 Admin Template" />
-		<meta name="description" content="JSOFT Admin - Responsive HTML5 Template">
-		<meta name="author" content="JSOFT.net">
+		<title>Engenhariadas 2020</title>
+		<meta name="keywords" content="LEEMG, Engenhariadas" />
+		<meta name="description" content="Sistema Web - Sistemas de gerenciamento de jogos do evento Engenharíadas Mineiro 2020">
+		<meta name="author" content="Infoalto">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -48,10 +48,26 @@
 		<section class="body">
 
 			<!-- start: header -->
+			<!--
+				<header class="page-header">
+						<h2>Index</h2>
+					
+						<div class="right-wrapper pull-right">
+							<ol class="breadcrumbs">
+								<li>
+									<a href="index.html">
+										<i class="fa fa-home"></i>
+									</a>
+								</li>
+							</ol>
+							<a class="sidebar-right-toggle" ></a>
+						</div>
+					</header>
+				-->
 			<header class="header">
 				<div class="logo-container">
-					<a href="../" class="logo">
-						<img src="assets/images/logo.png" height="35" alt="JSOFT Admin" />
+					<a class="logo">
+						<img src="../../Login_v1/images/43252089_1765515140219570_3689849392321265664_n.png" height="55" alt="Engenhariadas" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -60,7 +76,7 @@
 			
 				<!-- start: search & user box -->
 				<div class="header-right">
-			
+					<!--
 					<form action="pages-search-results.html" class="search nav-form">
 						<div class="input-group input-search">
 							<input type="text" class="form-control" name="q" id="q" placeholder="Search...">
@@ -232,17 +248,18 @@
 							</div>
 						</li>
 					</ul>
-			
+
+					-->	
 					<span class="separator"></span>
-			
+					
 					<div id="userbox" class="userbox">
 						<a href="#" data-toggle="dropdown">
 							<figure class="profile-picture">
-								<img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
+								<img src="../images/infoalto.png" alt="Joseph Doe" class="img-circle" data-lock-picture="../images/infoalto.png" />
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
 								<span class="name"><?php echo $nomeUser; ?></span>
-								<span class="role">administrador</span>
+								<span class="role">Administrador</span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -252,10 +269,7 @@
 							<ul class="list-unstyled">
 								<li class="divider"></li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
-								</li>
-								<li>
-									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> Meu Perfil</a>
 								</li>
 								<li>
 									<a role="menuitem" tabindex="-1" href="../logout.php"><i class="fa fa-power-off"></i> Sair</a>
@@ -266,15 +280,15 @@
 				</div>
 				<!-- end: search & user box -->
 			</header>
-			<!-- end: header -->
+			<!-- fim: header -->
 
 			<div class="inner-wrapper">
-				<!-- start: sidebar -->
+				<!-- inicio: sidebar esquerdo -->
 				<aside id="sidebar-left" class="sidebar-left">
 				
 					<div class="sidebar-header">
 						<div class="sidebar-title">
-							Navigation
+							Menu Principal
 						</div>
 						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
 							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -286,9 +300,9 @@
 							<nav id="menu" class="nav-main" role="navigation">
 								<ul class="nav nav-main">
 									<li class="nav-active">
-										<a href="index.html">
+										<a href="index.php">
 											<i class="fa fa-home" aria-hidden="true"></i>
-											<span>Dashboard</span>
+											<span>Painel de Controle</span>
 										</a>
 									</li>
 									<li>
@@ -313,7 +327,7 @@
 												<a href="pages-signin.html">
 													 Sign In
 												</a>
-											</li>
+											</li> 
 											<li>
 												<a href="pages-recover-password.html">
 													 Recover Password
@@ -511,7 +525,7 @@
 												</a>
 											</li>
 											<li>
-												<a href="forms-validation.html">
+												<a href="paginas/cadastro-admin.html">
 													 Validation
 												</a>
 											</li>
@@ -725,18 +739,19 @@
 				</aside>
 				<!-- end: sidebar -->
 
+				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Dashboard</h2>
+						<h2>Painel de Controle</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
-									<a href="index.html">
+									<a href="index.php">
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Dashboard</span></li>
+								<li><span>Painel de Controle</span></li>
 							</ol>
 					
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
