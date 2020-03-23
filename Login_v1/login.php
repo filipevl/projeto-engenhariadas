@@ -66,7 +66,7 @@
 						<span class="txt1">
 							Esqueci
 						</span>
-						<a class="txt2" href="painel/pages-recover-password.html">
+						<a class="txt2" href="/painel/paginas/recuperar-senha.html">
 							E-mail/Senha
 						</a>
 					</div>
