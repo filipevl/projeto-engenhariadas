@@ -141,7 +141,11 @@
 										</a>
 									</li>
 									<li class="nav-active">
+<<<<<<< HEAD:Login_v1/painel/index.php
+										<a href="paginas/enviar-mp3.php">
+=======
 										<a href="main/enviar-mp3.html">
+>>>>>>> 636c19b848290e9e9ece66db4c2b61c85688e1e8:Engenhariadas/painel/index.php
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Envio de arquivo MP3</span>
 										</a>
