@@ -52,7 +52,7 @@
 			<header class="header">
 				<div class="logo-container">
 					<a class="logo">
-						<img src="../../Login_v1/images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
+						<img src="../../Engenhariadas/images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -117,97 +117,97 @@
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastro-admin.html">
+										<a href="main/cadastro-admin.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastrar Admin</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastro-modalidades.html">
+										<a href="main/cadastro-modalidades.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Inscrição de modalidades</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastro-atleta.html">
+										<a href="main/cadastro-atleta.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Inscrições de atletas gerais, individuais, cheer, bateria e restrições.</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastro-reuniao.html">
+										<a href="main/cadastro-reuniao.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Inscrição para reunião</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/enviar-mp3.html">
+										<a href="main/enviar-mp3.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Envio de arquivo MP3</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/lista-reserva.html">
+										<a href="main/lista-reserva.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Envio de lista de reservas categorias individuais</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-cadastro.html">
+										<a href="main/alterar-cadastro.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alterações cadastrais</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/validar-documento.html">
+										<a href="main/validar-documento.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Validação de documentos</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-listagem.html">
+										<a href="main/alterar-listagem.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alteração em qualquer listagem</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastrar-confrontos.html">
+										<a href="main/cadastrar-confrontos.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastro de confrontos/chaveamento</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastrar-locais.html">
+										<a href="main/cadastrar-locais.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastros de locais</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastrar-tempo-de-jogo.html">
+										<a href="main/cadastrar-tempo-de-jogo.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastros de tempo de jogos</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-tabelamento-sistema.html">
+										<a href="main/alterar-tabelamento-sistema.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alterações no tabelamento resultante do sistemas</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-pontos-ou-wo.html">
+										<a href="main/alterar-pontos-ou-wo.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alteração de pontos em um jogo ou aplicar W.O.</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-cadastro-atletica.html">
+										<a href="main/alterar-cadastro-atletica.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alterações cadastrais das atléticas</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-modalidades.html">
+										<a href="main/alterar-modalidades.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alterações modalidades</span>
 										</a>
@@ -1047,6 +1047,6 @@
 </html>
 
 <?php 
-	else: header("Location:../login.php"); 
+	else: header("Location:../index.php"); 
 	endif; 
 ?>
