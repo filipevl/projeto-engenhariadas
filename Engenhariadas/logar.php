@@ -15,10 +15,10 @@
                 header("Location: painel/index.php");
                 
             }else{
-                header("location: login.php");
+                header("location: index.php");
             }
         }else{
-        header("location: login.php");
+        header("location: index.php");
         }
     }
     

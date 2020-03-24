@@ -66,13 +66,13 @@
 						<span class="txt1">
 							Esqueci
 						</span>
-						<a class="txt2" href="painel/paginas/recuperar-senha.html">
+						<a class="txt2" href="painel/atletica/recuperar-senha.html">
 							E-mail/Senha
 						</a>
 					</div>
 
 					<div class="text-center .p-t-100">
-						<a class="txt2" href="painel/paginas/solicitar-cadastro.html">
+						<a class="txt2" href="painel/atletica/solicitar-cadastro.html">
 							Crie sua conta
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
