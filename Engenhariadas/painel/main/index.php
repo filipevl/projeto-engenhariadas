@@ -1,5 +1,5 @@
 <?php 
-	require '../../verifica.php';
+	require '../../login/user-admin/verifica.php';
 
 	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
 <!doctype html>
@@ -83,7 +83,7 @@
 								</li>
 -->
 								<li>
-									<a role="menuitem" tabindex="-1" href="../logout.php"><i class="fa fa-power-off"></i> Sair</a>
+									<a role="menuitem" tabindex="-1" href="../../login/user-admin/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
 							</ul>
 						</div>
@@ -115,57 +115,63 @@
 											<i class="fa fa-home" aria-hidden="true"></i>
 											<span>Dashboard</span>
 										</a>
-                                    </li>
+									</li>
+									<li class="nav-active">
+										<a href="cadastro-admin.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Cadastrar Admin</span>
+										</a>
+									</li>
                                     <li class="nav-active">
-										<a href="paginas/validar-documento.html">
+										<a href="validar-documento.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Validação de documentos</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-listagem.html">
+										<a href="alterar-listagem.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alteração em qualquer listagem</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastrar-confrontos.html">
+										<a href="cadastrar-confrontos.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastro de confrontos/chaveamento</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastrar-locais.html">
+										<a href="cadastrar-locais.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastros de locais</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/cadastrar-tempo-de-jogo.html">
+										<a href="cadastrar-tempo-de-jogo.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastros de tempo de jogos</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-tabelamento-sistema.html">
+										<a href="alterar-tabelamento-sistema.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alterações no tabelamento resultante do sistemas</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-pontos-ou-wo.html">
+										<a href="alterar-pontos-ou-wo.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alteração de pontos em um jogo ou aplicar W.O.</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-cadastro-atletica.html">
+										<a href="alterar-cadastro-atletica.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alterações cadastrais das atléticas</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="paginas/alterar-modalidades.html">
+										<a href="alterar-modalidades.html">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Alterações modalidades</span>
 										</a>
@@ -259,6 +265,6 @@
 </html>
 
 <?php 
-	else: header("Location:../../index.php"); 
+	else: header("Location:../../admin.php"); 
 	endif; 
 ?>

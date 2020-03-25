@@ -37,7 +37,7 @@
 					<img src="images/43252089_1765515140219570_3689849392321265664_n.png" alt="IMG">
 				</div>
 
-				<form method="POST" action="logar.php" class="login100-form validate-form">
+				<form method="POST" action="login/user-atletica/logar.php" class="login100-form validate-form">
 					<span class="login100-form-title">
 						Engenharíadas 2020
 					</span>
