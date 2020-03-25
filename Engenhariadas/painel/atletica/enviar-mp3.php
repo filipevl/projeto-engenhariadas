@@ -78,10 +78,6 @@
 						<div class="dropdown-menu">
 							<ul class="list-unstyled">
 								<li class="divider"></li>
-<!-- <li>
-									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> Meu Perfil</a>
-								</li>
--->
 								<li>
 									<a role="menuitem" tabindex="-1" href="../logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
@@ -167,25 +163,37 @@
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
-				<section role="main" class="content-body">
+				<section role="main" class="content-body">					
 					<div class="row">
-						<div class=".col-md-12">
-							<label class="col-md-3 control-label">Enviar MP3</label>
-							<div class="col-md-6">
-								<div class="fileupload fileupload-new" data-provides="fileupload">
-									<div class="input-append">
-										<div class="uneditable-input">
-											<i class="fa fa-file fileupload-exists"></i>
-											<span class="fileupload-preview"></span>
+						<div class="col-xs-12">
+							<section class="panel">
+								<header class="panel-heading">
+									<h2 class="panel-title">Enviar arquivo MP3</h2>
+								</header>
+								<div class="panel-body">
+									<form class="form-horizontal form-bordered" method="get">														
+										<div class="form-group">
+											<label class="col-md-3 control-label">Upload de arquivo</label>
+											<div class="col-md-6">
+												<div class="fileupload fileupload-new" data-provides="fileupload">
+													<div class="input-append">
+														<div class="uneditable-input">
+															<i class="fa fa-file fileupload-exists"></i>
+															<span class="fileupload-preview"></span>
+														</div>
+														<span class="btn btn-default btn-file">
+															<span class="fileupload-exists">Alterar</span>
+															<span class="fileupload-new">arquivo selecionado</span>
+															<input type="file" />
+														</span>
+														<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Retirar</a>
+													</div>
+												</div>
+											</div>
 										</div>
-										<span class="btn btn-default btn-file">
-											<span class="fileupload-exists">Mudar</span>
-											<span class="fileupload-new">Selecione o arquivo</span>
-											<input type="file" />
-										</span>
-										<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remover</a>
-									</div>
+									</form>
 								</div>
+							</section>
 						</div>
 					</div>
                 </section>
