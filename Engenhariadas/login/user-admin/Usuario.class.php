@@ -4,7 +4,7 @@
         public function login($email, $senha){
             global $conn;
 
-            $sql = "SELECT * FROM usuarios WHERE email = :email AND senha = :senha";
+            $sql = "SELECT * FROM usuario_admin WHERE email = :email AND senha = :senha";
             $sql = $conn->prepare($sql);
             $sql->bindValue("email", $email);
             $sql->bindValue("senha", md5($senha));
@@ -25,7 +25,7 @@
  
             $array = array();
 
-            $sql = "SELECT nome FROM usuarios WHERE id = :idusuario";
+            $sql = "SELECT nome FROM usuario_admin WHERE id = :idusuario";
             $sql = $conn->prepare($sql);
             $sql->bindValue("idusuario", $id);
             $sql->execute();

@@ -1,5 +1,5 @@
 <?php 
-	require '../../verifica.php';
+	require '../../login/user-atletica/verifica.php';
 
 	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
 <!doctype html>
@@ -69,7 +69,7 @@
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
 								<span class="name"><?php echo $nomeUser; ?></span>
-								<span class="role">Administrador</span>
+								<span class="role"></span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -83,7 +83,7 @@
 								</li>
 -->
 								<li>
-									<a role="menuitem" tabindex="-1" href="../logout.php"><i class="fa fa-power-off"></i> Sair</a>
+									<a role="menuitem" tabindex="-1" href="../../login/user-atletica/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
 							</ul>
 						</div>
@@ -116,12 +116,6 @@
 											<span>Dashboard</span>
 										</a>
                                     </li>
-                                    <li class="nav-active">
-										<a href="cadastro-admin.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Cadastrar Admin</span>
-										</a>
-									</li>
 									<li class="nav-active">
 										<a href="cadastro-modalidades.html">
 											<i class="fa" href=""aria-hidden="true"></i>

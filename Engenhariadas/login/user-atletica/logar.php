@@ -2,7 +2,7 @@
     
     if(isset($_POST['email']) && !empty($_POST['email']) && $_POST['senha'] && !empty($_POST['senha'])){
     
-        require 'conectar.php';
+        require '../../conectar.php';
         require 'Usuario.class.php';
 
         $u = new Usuario();
@@ -12,13 +12,13 @@
         
         if($u->login($email, $senha) == true){
             if(isset($_SESSION['idusuario'])){
-                header("Location: painel/index.php");
+                header("Location: ../../painel/atletica/index.php");
                 
             }else{
-                header("location: index.php");
+                header("location: ../../index.php");
             }
         }else{
-        header("location: index.php");
+        header("location: ../../index.php");
         }
     }
     

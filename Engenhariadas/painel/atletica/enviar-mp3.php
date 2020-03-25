@@ -1,5 +1,5 @@
 <?php 
-	require '../../verifica.php';
+	require '../../login/user-atletica/verifica.php';
 
 	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
 <!doctype html>
@@ -79,7 +79,7 @@
 							<ul class="list-unstyled">
 								<li class="divider"></li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="../logout.php"><i class="fa fa-power-off"></i> Sair</a>
+									<a role="menuitem" tabindex="-1" href="../../login/user-atletica/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
 							</ul>
 						</div>
@@ -110,12 +110,6 @@
 										<a href="index.php">
 											<i class="fa fa-home" aria-hidden="true"></i>
 											<span>Dashboard</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="cadastro-admin.html">
-											<i class="fa fa-circle" href=""aria-hidden="true"></i>
-											<span>Cadastrar Admin</span>
 										</a>
 									</li>
 									<li class="nav-active">
@@ -252,6 +246,6 @@
 </html>
 
 <?php 
-	else: header("Location:../../login.php"); 
+	else: header("Location:../../index.php"); 
 	endif; 
 ?>
