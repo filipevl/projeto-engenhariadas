@@ -75,7 +75,7 @@
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="cadastro-admin.html">
+										<a href="cadastro-admin.php">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastrar Admin</span>
 										</a>
@@ -163,7 +163,7 @@
 
 					<!-- start: page -->
 					<div class="col-md-6">
-						<form id="form" action="forms-validation.html" class="form-horizontal">
+						<form id="form" action="cadastrar-admin.php" method="POST" class="form-horizontal">
 							<section class="panel">
 								<header class="panel-heading">
 									<h2 class="panel-title">Cadastro</h2>
@@ -175,7 +175,7 @@
 									<div class="form-group">
 										<label class="col-sm-3 control-label">Nome completo<span class="required">*</span></label>
 										<div class="col-sm-9">
-											<input type="text" name="fullname" class="form-control" placeholder="ex: João da Silva" required/>
+											<input type="text" name="nome" class="form-control" placeholder="ex: João da Silva" required/>
 										</div>
 									</div>
 									<div class="form-group">
@@ -192,14 +192,14 @@
 									<div class="form-group">
 										<label class="col-sm-3 control-label">Senha <span class="required">*</span></label>
 										<div class="col-sm-9">
-											<input name="password" class="form-control" required/>
+											<input type="password" name="senha" class="form-control" required/>
 										</div>
 									</div>
-									<div class="form-group">
-										<label class="col-sm-3 control-label">Permissões <span class="required">*</span></label> <!-- CRUD -->
+									<!--<div class="form-group">
+										<label class="col-sm-3 control-label">Permissões <span class="required">*</span></label>   
 										<div class="col-sm-9">
 											<div class="checkbox-custom chekbox-primary">
-												<input id="create" value="project" type="checkbox" name="for[]" required /> <!-- You can edit-->
+												<input id="create" value="project" type="checkbox" name="for[]" required />
 												<label for="create">Criar usuários administradores</label>
 											</div>
 											<div class="checkbox-custom chekbox-primary">
@@ -207,7 +207,7 @@
 												<label for="read">Editar e validar informações</label>
 											</div>
 										</div>
-									</div>
+									</div>-->
 								</div>
 								<footer class="panel-footer">
 									<div class="row">

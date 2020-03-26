@@ -117,7 +117,7 @@
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="cadastro-admin.html">
+										<a href="cadastro-admin.php">
 											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastrar Admin</span>
 										</a>
