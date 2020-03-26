@@ -40,7 +40,7 @@
 		<section class="body-sign">
 			<div class="center-sign">
 				<a class="logo pull-left">
-					<img src="../../../Login_v1/images/43252089_1765515140219570_3689849392321265664_n.png" height="54" alt="Porto Admin" />
+					<img src="../../../Engenhariadas/images/43252089_1765515140219570_3689849392321265664_n.png" height="54" alt="Porto Admin" />
 				</a>
 
 				<div class="panel panel-sign">
@@ -48,12 +48,12 @@
 						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Inscrever-se</h2>
 					</div>
 					<div class="panel-body">
-						<form>
+						<form action="cadastro-presidente.php" method="POST">
 
 							<div class="form-group">
 								<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>
 								<div class="col-md-6">
-									<select class="form-control" data-plugin-multiselect id="ms_example1">
+									<select name="instituicao" class="form-control" data-plugin-multiselect id="ms_example1">
 										<option value="cefet-bh" >CEFET BH </option>
 										<option value="cefet-cvo">CEFET CURVELO</option>
 										<option value="fasar">FASAR</option>
@@ -87,22 +87,22 @@
 
 							<div class="form-group mb-lg">
 								<label>Nome do Presidente<span class="required">*</span></label>
-								<input name="nome-presidente" type="name" class="form-control input-lg" />
+								<input name="nome" type="text" class="form-control input-lg" />
 							</div>
 
 							<div class="form-group mb-lg">
 								<label>Telefone<span class="required">*</span></label>
-								<input name="phone" type="number" class="form-control input-lg" />
+								<input name="telefone" type="number" class="form-control input-lg" />
 							</div>
 
 							<div class="form-group mb-lg">
 								<label>Cidade<span class="required">*</span></label>
-								<input name="city" type="city" class="form-control input-lg" />
+								<input name="cidade" type="text" class="form-control input-lg" />
 							</div>
 
 							<div class="form-group mb-lg">
 								<label>CNPJ<span class="required">*</span></label>
-								<input name="cpnj" type="cnpj" class="form-control input-lg" />
+								<input name="cnpj" type="number" class="form-control input-lg" />
 							</div>
 
 							<div class="form-group mb-lg">
@@ -114,7 +114,7 @@
 								<div class="row">
 									<div class="col-sm-6 mb-lg">
 										<label>Senha<span class="required">*</span></label>
-										<input name="pwd" type="password" class="form-control input-lg" />
+										<input name="senha" type="password" class="form-control input-lg" />
 									</div>
 									<div class="col-sm-6 mb-lg">
 										<label>Confirmação de senha<span class="required">*</span></label>
@@ -126,8 +126,8 @@
 							<div class="row">
 								<div class="col-sm-4 text-right"></div>
 								<div class="col-sm-4 text-right">
-									<button type="submit" class="btn btn-primary hidden-xs">Inscrever-se</button>
-									<button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Inscrever-se</button>
+									<button type="submit" class="btn btn-primary hidden-xs">Inscrever-se</button> 
+									 <button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Inscrever-se</button>
 								</div>
 							</div>
 							<p></p>

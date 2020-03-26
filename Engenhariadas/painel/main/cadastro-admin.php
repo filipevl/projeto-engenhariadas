@@ -1,3 +1,7 @@
+<?php 
+	require '../../login/user-admin/verifica.php';
+
+	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
 <!doctype html>
 <html class="fixed">
 	<head>
@@ -48,6 +52,37 @@
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
 					</div>
 				</div>
+				<!-- start: user box -->
+				<div class="header-right">
+					<span class="separator"></span>
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="../../images/infoalto.png" alt="name" class="img-circle" data-lock-picture="../images/infoalto.png" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
+								<span class="name"><?php echo $nomeUser; ?></span>
+								<span class="role">Administrador</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li class="divider"></li>
+<!-- <li>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> Meu Perfil</a>
+								</li>
+-->
+								<li>
+									<a role="menuitem" tabindex="-1" href="../../login/user-admin/logout.php"><i class="fa fa-power-off"></i> Sair</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
 			</header>
 			<!-- end: header -->
 
@@ -250,3 +285,7 @@
 		<script src="../assets/javascripts/forms/examples.validation.js"></script>
 	</body>
 </html>
+<?php 
+	else: header("Location:../../admin.php"); 
+	endif; 
+?>
