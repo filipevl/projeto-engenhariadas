@@ -106,71 +106,41 @@
 									<li class="nav-active">
 										<a href="index.php">
 											<i class="fa fa-home" aria-hidden="true"></i>
-											<span>Dashboard</span>
+											<span>Página inicial</span>
 										</a>
 									</li>
 									<li class="nav-active">
 										<a href="cadastro-admin.php">
-											<i class="fa" href=""aria-hidden="true"></i>
+											<i class="fa fa-group" aria-hidden="true"></i>
 											<span>Cadastrar Admin</span>
 										</a>
 									</li>
                                     <li class="nav-active">
-										<a href="validar-documento.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Validação de documentos</span>
+										<a href="atleticas-inscritas.php">
+											<i class="fa fa-empire" aria-hidden="true"></i>
+											<span>Atléticas inscritas</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="alterar-listagem.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Alteração em qualquer listagem</span>
+										<a href="editar-modalidades.php">
+											<i class="fa fa-file-code-o" href=""aria-hidden="true"></i>
+											<span>Editar modalidades</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="cadastrar-confrontos.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Cadastro de confrontos/chaveamento</span>
+										<a href="locais-horarios.php">
+											<i class="fa fa-map-marker" href=""aria-hidden="true"></i>
+											<span>Locais/horários</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="cadastrar-locais.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Cadastros de locais</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="cadastrar-tempo-de-jogo.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Cadastros de tempo de jogos</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="alterar-tabelamento-sistema.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Alterações no tabelamento resultante do sistemas</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="alterar-pontos-ou-wo.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Alteração de pontos em um jogo ou aplicar W.O.</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="alterar-cadastro-atletica.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Alterações cadastrais das atléticas</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="alterar-modalidades.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Alterações modalidades</span>
+										<a href="confronto-chaveamento.php">
+											<i class="fa fa-key" href=""aria-hidden="true"></i>
+											<span>Confroto/Chaveamento</span>
 										</a>
 									</li>
 								</ul>
-							</nav>
+							</div>
 						</div>
 					</div>
 				
@@ -197,7 +167,7 @@
 					</header>
 
 					<!-- start: page -->
-					<div class="col-md-6">
+					<div class="col-md-12">
 						<form id="form" action="cadastrar-admin.php" method="POST" class="form-horizontal">
 							<section class="panel">
 								<header class="panel-heading">
