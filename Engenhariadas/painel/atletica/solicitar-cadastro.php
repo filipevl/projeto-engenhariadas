@@ -92,7 +92,9 @@
 
 							<div class="form-group mb-lg">
 								<label>Telefone<span class="required">*</span></label>
-								<input name="telefone" type="number" class="form-control input-lg" />
+								<input type="tel" name="telefone" pattern="[0-9]{11}" class="form-control input-lg">
+								<small>Somente números no formato: (**) *********</small>
+								<!--<input name="telefone" type="number" class="form-control input-lg" /> -->
 							</div>
 
 							<div class="form-group mb-lg">
@@ -102,7 +104,8 @@
 
 							<div class="form-group mb-lg">
 								<label>CNPJ<span class="required">*</span></label>
-								<input name="cnpj" type="number" class="form-control input-lg" />
+								<input type="text" name="cnpj" pattern="[0-9]{14}" class="form-control input-lg">
+								<!--<input name="cnpj" type="" class="form-control input-lg" /> -->
 							</div>
 
 							<div class="form-group mb-lg">
