@@ -91,6 +91,11 @@
 							</div>
 
 							<div class="form-group mb-lg">
+								<label>Nome da Atlética<span class="required">*</span></label>
+								<input name="atletica" type="text" class="form-control input-lg" />
+							</div>
+
+							<div class="form-group mb-lg">
 								<label>Telefone<span class="required">*</span></label>
 								<input type="tel" name="telefone" pattern="[0-9]{11}" class="form-control input-lg">
 								<small>Somente números no formato: (**) *********</small>
@@ -103,14 +108,14 @@
 							</div>
 
 							<div class="form-group mb-lg">
+								<label>E-mail<span class="required">*</span></label>
+								<input name="email" type="email" class="form-control input-lg" />
+							</div>
+							
+							<div class="form-group mb-lg">
 								<label>CNPJ<span class="required">*</span></label>
 								<input type="text" name="cnpj" pattern="[0-9]{14}" class="form-control input-lg">
 								<!--<input name="cnpj" type="" class="form-control input-lg" /> -->
-							</div>
-
-							<div class="form-group mb-lg">
-								<label>E-mail<span class="required">*</span></label>
-								<input name="email" type="email" class="form-control input-lg" />
 							</div>
 
 							<div class="form-group mb-none">

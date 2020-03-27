@@ -37,7 +37,7 @@
 
             return $array;
         }
-        public function cadastrar($nome, $email, $senha, $telefone, $instituicao, $cnpj, $cidade){
+        public function cadastrar($nome, $atletica, $email, $senha, $telefone, $instituicao, $cnpj, $cidade){
             global $conn;
             global $result;
 
@@ -54,10 +54,11 @@
             }
 
             if($result == false){
-                $sql = "INSERT INTO usuario_atletica (nome, email, senha, telefone, instituicao, cnpj, cidade) VALUES ('$nome', '$email', MD5('$senha'), '$telefone', '$instituicao', '$cnpj', '$cidade')";
+                $sql = "INSERT INTO usuario_atletica (nome, atletica, email, senha, telefone, instituicao, cnpj, cidade) VALUES ('$nome', '$atletica', '$email', MD5('$senha'), '$telefone', '$instituicao', '$cnpj', '$cidade')";
                 $sql = $conn->prepare($sql);
                 $sql->bindValue("nome", $nome);
                 $sql->bindValue("email", $email);
+                $sql->bindValue("atletica", $atletica);
                 $sql->bindValue("senha", md5($senha));
                 $sql->bindValue("telefone", $telefone);
                 $sql->bindValue("instituicao", $instituicao);
