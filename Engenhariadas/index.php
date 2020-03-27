@@ -72,7 +72,7 @@
 					</div>
 
 					<div class="text-center .p-t-100">
-						<a class="txt2" href="painel/atletica/solicitar-cadastro.html">
+						<a class="txt2" href="painel/atletica/solicitar-cadastro.php">
 							Crie sua conta
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>

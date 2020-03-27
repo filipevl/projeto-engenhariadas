@@ -9,9 +9,9 @@
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
-		<title>Engenhariadas 2020</title>
-		<meta name="keywords" content="LEEMG, Engenhariadas" />
-		<meta name="description" content="Sistema Web - Sistemas de gerenciamento de jogos do evento Engenharíadas Mineiro 2020">
+		<title>Engenhariadas - Cadastro de usuários administradores</title>
+		<meta name="keywords" content="Engenhariadas" />
+		<meta name="description" content="Página de cadastro de usuários e permissões dentro do sistema">
 		<meta name="author" content="Infoalto">
 
 		<!-- Mobile Metas -->
@@ -25,11 +25,6 @@
 		<link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.css" />
 		<link rel="stylesheet" href="../assets/vendor/magnific-popup/magnific-popup.css" />
 		<link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
-
-		<!-- Specific Page Vendor CSS -->
-		<link rel="stylesheet" href="../assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
-		<link rel="stylesheet" href="../assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
-		<link rel="stylesheet" href="../assets/vendor/morris/morris.css" />
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="../assets/stylesheets/theme.css" />
@@ -48,17 +43,15 @@
 		<section class="body">
 
 			<!-- start: header -->
-
 			<header class="header">
 				<div class="logo-container">
 					<a class="logo">
-						<img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
+						<img src="../../../Engenhariadas/images/43252089_1765515140219570_3689849392321265664_n.png" height="35" alt="Engenhariadas" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
 					</div>
 				</div>
-			
 				<!-- start: user box -->
 				<div class="header-right">
 					<span class="separator"></span>
@@ -78,6 +71,10 @@
 						<div class="dropdown-menu">
 							<ul class="list-unstyled">
 								<li class="divider"></li>
+<!-- <li>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> Meu Perfil</a>
+								</li>
+-->
 								<li>
 									<a role="menuitem" tabindex="-1" href="../../login/user-admin/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
@@ -87,15 +84,15 @@
 				</div>
 				<!-- end: search & user box -->
 			</header>
-			<!-- fim: header -->
+			<!-- end: header -->
 
 			<div class="inner-wrapper">
-				<!-- inicio: sidebar esquerdo -->
+				<!-- start: sidebar -->
 				<aside id="sidebar-left" class="sidebar-left">
 				
 					<div class="sidebar-header">
 						<div class="sidebar-title">
-							Menu Principal
+							Navegação
 						</div>
 						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
 							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -109,51 +106,80 @@
 									<li class="nav-active">
 										<a href="index.php">
 											<i class="fa fa-home" aria-hidden="true"></i>
-											<span>Página inicial</span>
+											<span>Dashboard</span>
 										</a>
 									</li>
 									<li class="nav-active">
 										<a href="cadastro-admin.php">
-											<i class="fa fa-group" aria-hidden="true"></i>
+											<i class="fa" href=""aria-hidden="true"></i>
 											<span>Cadastrar Admin</span>
 										</a>
 									</li>
                                     <li class="nav-active">
-										<a href="atleticas-inscritas.php">
-											<i class="fa fa-empire" aria-hidden="true"></i>
-											<span>Atléticas inscritas</span>
+										<a href="validar-documento.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Validação de documentos</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="editar-modalidades.php">
-											<i class="fa fa-file-code-o" href=""aria-hidden="true"></i>
-											<span>Editar modalidades</span>
+										<a href="alterar-listagem.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Alteração em qualquer listagem</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="locais-horarios.php">
-											<i class="fa fa-map-marker" href=""aria-hidden="true"></i>
-											<span>Locais/horários</span>
+										<a href="cadastrar-confrontos.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Cadastro de confrontos/chaveamento</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="confronto-chaveamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Confroto/Chaveamento</span>
+										<a href="cadastrar-locais.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Cadastros de locais</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="cadastrar-tempo-de-jogo.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Cadastros de tempo de jogos</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="alterar-tabelamento-sistema.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Alterações no tabelamento resultante do sistemas</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="alterar-pontos-ou-wo.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Alteração de pontos em um jogo ou aplicar W.O.</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="alterar-cadastro-atletica.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Alterações cadastrais das atléticas</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="alterar-modalidades.html">
+											<i class="fa" href=""aria-hidden="true"></i>
+											<span>Alterações modalidades</span>
 										</a>
 									</li>
 								</ul>
-							</div>
+							</nav>
 						</div>
 					</div>
 				
 				</aside>
 				<!-- end: sidebar -->
 
-				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Cadastro de usuários admins</h2>
+						<h2>Cadastro de usuários</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
@@ -162,75 +188,75 @@
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Cadastrar Admin</span></li>
+								<li>
+									<span>Cadastro de usuários administradores</span>
+								</li>
 							</ol>
-					
-							<a class="sidebar-right-toggle"></a>
+							<a class="sidebar-right-toggle" ></a>
 						</div>
 					</header>
-					<div class="row">
-                        <div class="col-md-12">
-                            <form id="form" action="forms-validation.html" class="form-horizontal">
-                                <section class="panel">
-                                    <header class="panel-heading">
-                                        <h2 class="panel-title">Cadastro</h2>
-                                        <p class="panel-subtitle">
-                                            Cadastro de usuários administradores
-                                        </p>
-                                    </header>
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">Nome completo<span class="required">*</span></label>
-                                            <div class="col-sm-9">
-                                                <input type="text" name="fullname" class="form-control" placeholder="ex: João da Silva" required/>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">E-mail <span class="required">*</span></label>
-                                            <div class="col-sm-9">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-envelope"></i>
-                                                    </span>
-                                                    <input type="email" name="email" class="form-control" placeholder="ex: email@email.com" required/>
-                                                </div>
-                                            </div>
+
+					<!-- start: page -->
+					<div class="col-md-6">
+						<form id="form" action="cadastrar-admin.php" method="POST" class="form-horizontal">
+							<section class="panel">
+								<header class="panel-heading">
+									<h2 class="panel-title">Cadastro</h2>
+									<p class="panel-subtitle">
+										Cadastro de usuários administradores
+									</p>
+								</header>
+								<div class="panel-body">
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Nome completo<span class="required">*</span></label>
+										<div class="col-sm-9">
+											<input type="text" name="nome" class="form-control" placeholder="ex: João da Silva" required/>
 										</div>
-										<div class="form-group">
-											<label class="col-md-3 control-label" for="inputPassword">Senha</label>
-											<div class="col-md-6">
-												<input type="password" class="form-control" placeholder="" id="inputPassword">
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">E-mail <span class="required">*</span></label>
+										<div class="col-sm-9">
+											<div class="input-group">
+												<span class="input-group-addon">
+													<i class="fa fa-envelope"></i>
+												</span>
+												<input type="email" name="email" class="form-control" placeholder="ex: email@email.com" required/>
 											</div>
 										</div>
-										<!--
-                                        <div class="form-group">
-                                            <label class="col-sm-3 control-label">Permissões <span class="required">*</span></label>
-                                            <div class="col-sm-9">
-                                                <div class="checkbox-custom chekbox-primary">
-                                                    <input id="create" value="project" type="checkbox" name="for[]" required />
-                                                    <label for="create">Criar usuários administradores</label>
-                                                </div>
-                                                <div class="checkbox-custom chekbox-primary">
-                                                    <input id="read" value="website" type="checkbox" name="for[]" />
-                                                    <label for="read">Editar informações</label>
-                                                </div>
-                                            </div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label">Senha <span class="required">*</span></label>
+										<div class="col-sm-9">
+											<input type="password" name="senha" class="form-control" required/>
 										</div>
-										-->
-                                    </div>
-                                    <footer class="panel-footer">
-                                        <div class="row">
-                                            <div class="col-sm-9 col-sm-offset-3">
-                                                <button class="btn btn-primary">Cadastrar</button>
-                                            </div>
-                                        </div>
-                                    </footer>
-                                </section>
-                            </form>
-                        </div>
+									</div>
+									<!--<div class="form-group">
+										<label class="col-sm-3 control-label">Permissões <span class="required">*</span></label>   
+										<div class="col-sm-9">
+											<div class="checkbox-custom chekbox-primary">
+												<input id="create" value="project" type="checkbox" name="for[]" required />
+												<label for="create">Criar usuários administradores</label>
+											</div>
+											<div class="checkbox-custom chekbox-primary">
+												<input id="read" value="website" type="checkbox" name="for[]" />
+												<label for="read">Editar e validar informações</label>
+											</div>
+										</div>
+									</div>-->
+								</div>
+								<footer class="panel-footer">
+									<div class="row">
+										<div class="col-sm-9 col-sm-offset-3">
+											<button class="btn btn-primary">Cadastrar</button>
+										</div>
+									</div>
+								</footer>
+							</section>
+						</form>
 					</div>
-				</section>
-			</div>
+				</div>
+				<!-- end: page -->
+			</section>
 		</section>
 
 		<!-- Vendor -->
@@ -243,31 +269,7 @@
 		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
 		
 		<!-- Specific Page Vendor -->
-		<script src="../assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
-		<script src="../assets/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
-		<script src="../assets/vendor/jquery-appear/jquery.appear.js"></script>
-		<script src="../assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-		<script src="../assets/vendor/jquery-easypiechart/jquery.easypiechart.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.js"></script>
-		<script src="../assets/vendor/flot-tooltip/jquery.flot.tooltip.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.pie.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.categories.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.resize.js"></script>
-		<script src="../assets/vendor/jquery-sparkline/jquery.sparkline.js"></script>
-		<script src="../assets/vendor/raphael/raphael.js"></script>
-		<script src="../assets/vendor/morris/morris.js"></script>
-		<script src="../assets/vendor/gauge/gauge.js"></script>
-		<script src="../assets/vendor/snap-svg/snap.svg.js"></script>
-		<script src="../assets/vendor/liquid-meter/liquid.meter.js"></script>
-		<script src="../assets/vendor/jqvmap/jquery.vmap.js"></script>
-		<script src="../assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+		<script src="../assets/vendor/jquery-validation/jquery.validate.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
 		<script src="../assets/javascripts/theme.js"></script>
@@ -280,10 +282,9 @@
 
 
 		<!-- Examples -->
-		<script src="../assets/javascripts/dashboard/examples.dashboard.js"></script>
+		<script src="../assets/javascripts/forms/examples.validation.js"></script>
 	</body>
 </html>
-
 <?php 
 	else: header("Location:../../admin.php"); 
 	endif; 

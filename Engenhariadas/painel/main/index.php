@@ -118,7 +118,11 @@
 									</li>
 									<li class="nav-active">
 										<a href="cadastro-admin.php">
+<<<<<<< HEAD
 											<i class="fa fa-group" aria-hidden="true"></i>
+=======
+											<i class="fa" href=""aria-hidden="true"></i>
+>>>>>>> 6ace148577b3b79e80db2009fa9021bcdf4e3dbf
 											<span>Cadastrar Admin</span>
 										</a>
 									</li>
