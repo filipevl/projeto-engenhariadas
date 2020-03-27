@@ -1,5 +1,5 @@
 <?php 
-	require '../../login/user-admin/verifica.php';
+	require '../../login/user-atletica/verifica.php';
 
 	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
 <!doctype html>
@@ -52,7 +52,7 @@
 			<header class="header">
 				<div class="logo-container">
 					<a class="logo">
-						<img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
+                        <img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -69,7 +69,7 @@
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
 								<span class="name"><?php echo $nomeUser; ?></span>
-								<span class="role">Administrador</span>
+								<span class="role"></span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -83,7 +83,7 @@
 								</li>
 -->
 								<li>
-									<a role="menuitem" tabindex="-1" href="../../login/user-admin/logout.php"><i class="fa fa-power-off"></i> Sair</a>
+									<a role="menuitem" tabindex="-1" href="../../login/user-atletica/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
 							</ul>
 						</div>
@@ -115,42 +115,42 @@
 											<i class="fa fa-home" aria-hidden="true"></i>
 											<span>Página inicial</span>
 										</a>
-									</li>
+                                    </li>
 									<li class="nav-active">
-										<a href="cadastro-admin.php">
-											<i class="fa fa-group" aria-hidden="true"></i>
-											<span>Cadastrar Admin</span>
-										</a>
-									</li>
-                                    <li class="nav-active">
-										<a href="atleticas-inscritas.php">
-											<i class="fa fa-empire" aria-hidden="true"></i>
-											<span>Atléticas inscritas</span>
+										<a href="inscricao-modalidade.php">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<span>Inscrição/Modalidades</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="editar-modalidades.php">
-											<i class="fa fa-file-code-o" href=""aria-hidden="true"></i>
-											<span>Editar modalidades</span>
+										<a href="inscricao-modalidade-individual.php">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>Inscrição/Modalidades individuais</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="locais-horarios.php">
-											<i class="fa fa-map-marker" href=""aria-hidden="true"></i>
-											<span>Locais/horários</span>
+										<a href="restricao-modalidade.php">
+											<i class="fa fa-warning" aria-hidden="true"></i>
+											<span>Restricao/Modalidade</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="confronto-chaveamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Confroto/Chaveamento</span>
+										<a href="enviar-mp3.php">
+											<i class="fa fa-file-sound-o" aria-hidden="true"></i>
+											<span>Envio de arquivo MP3</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="reuniao.php">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<span>Cadastro (Reunião LEEMG)</span>
 										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-				
+					
 				</aside>
 				<!-- end: sidebar -->
 
@@ -235,6 +235,6 @@
 </html>
 
 <?php 
-	else: header("Location:../../admin.php"); 
+	else: header("Location:../../index.php"); 
 	endif; 
 ?>

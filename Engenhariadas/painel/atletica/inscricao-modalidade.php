@@ -2,8 +2,10 @@
 	require '../../login/user-atletica/verifica.php';
 
 	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
+	
 <!doctype html>
 <html class="fixed">
+
 	<head>
 
 		<!-- Basic -->
@@ -44,6 +46,7 @@
 		<script src="../assets/vendor/modernizr/modernizr.js"></script>
 
 	</head>
+
 	<body>
 		<section class="body">
 
@@ -52,7 +55,7 @@
 			<header class="header">
 				<div class="logo-container">
 					<a class="logo">
-                        <img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
+						<img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -78,10 +81,7 @@
 						<div class="dropdown-menu">
 							<ul class="list-unstyled">
 								<li class="divider"></li>
-<!-- <li>
-									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> Meu Perfil</a>
-								</li>
--->
+
 								<li>
 									<a role="menuitem" tabindex="-1" href="../../login/user-atletica/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
@@ -155,9 +155,10 @@
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
-				<section role="main" class="content-body">
+				<section role="main" class="content-body">	
+
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
+						<h2>Inscrição/Modalidade</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
@@ -166,24 +167,211 @@
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Painel de Controle</span></li>
+								<li><span>Inscrição/Modalidade</span></li>
 							</ol>
 					
 							<a class="sidebar-right-toggle"></a>
 						</div>
-					</header>
-					<div class="row">
-						<div class="col-md-6">
-							<section class="panel">
 
-                            </section>
-						</div>
+					</header>
+
+					
+				<div class="panel panel-sign">
+					<div class="panel-body">
+						<form>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Escolha sua série: <span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" data-plugin-multiselect id="serie">
+										<option value="serie-a" >A</option>
+										<option value="serie-b">B</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Atletismo<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="atletismo" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Basquete<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="basquete" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>	
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Volei<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="volei" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Futebol<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="futebol" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Futsal<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="futsal" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Handebol<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="handebol" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Jiu-Jitsu<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="jiu-jitsu" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Judô<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="judo" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Natação<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="natacao" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Peteca<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="peteca" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Tênis de mesa<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="tenis-mes" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Tênis de campo<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="tenis-campo" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Bateria<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="bateria" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Cheer<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="cheer" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Xadrez<span class="required">*</span></label>
+								<div class="col-md-6">
+									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="xadrez" style="display: none;">
+										<option value="masculino">Masculino</option>
+										<option value="feminino" selected="">Feminino</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-md-3 control-label">Enviar a planilha<span class="required">*</span></label>
+								<div class="col-md-6">
+									<div class="fileupload fileupload-new" data-provides="fileupload">
+										<div class="input-append">
+											<span class="btn btn-default btn-file">
+												<input type="file" />
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-4 text-right"></div>
+								<div class="col-sm-4 text-right">
+									<button type="submit" class="btn btn-primary hidden-xs">Concluir</button>
+									<button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Concluir</button>
+								</div>
+							</div>
+							<p></p>
+
+						</form>
 					</div>
+				</div>
+
 				</section>
 			</div>
 		</section>
 
 		<!-- Vendor -->
+		<script src="modalidades.js"></script>
 		<script src="../assets/vendor/jquery/jquery.js"></script>
 		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
 		<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
@@ -232,6 +420,7 @@
 		<!-- Examples -->
 		<script src="../assets/javascripts/dashboard/examples.dashboard.js"></script>
 	</body>
+
 </html>
 
 <?php 

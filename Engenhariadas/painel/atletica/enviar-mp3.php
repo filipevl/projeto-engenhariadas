@@ -109,45 +109,39 @@
 									<li class="nav-active">
 										<a href="index.php">
 											<i class="fa fa-home" aria-hidden="true"></i>
-											<span>Dashboard</span>
+											<span>Página inicial</span>
+										</a>
+                                    </li>
+									<li class="nav-active">
+										<a href="inscricao-modalidade.php">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<span>Inscrição/Modalidades</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="cadastro-modalidades.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Inscrição de modalidades</span>
+										<a href="inscricao-modalidade-individual.php">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>Inscrição/Modalidades individuais</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="cadastro-atleta.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Inscrições de atletas gerais, individuais, cheer, bateria e restrições.</span>
+										<a href="restricao-modalidade.php">
+											<i class="fa fa-warning" aria-hidden="true"></i>
+											<span>Restricao/Modalidade</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="cadastro-reuniao.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Inscrição para reunião</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="enviar-mp3.html">
-											<i class="fa" href=""aria-hidden="true"></i>
+										<a href="enviar-mp3.php">
+											<i class="fa fa-file-sound-o" aria-hidden="true"></i>
 											<span>Envio de arquivo MP3</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="lista-reserva.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Envio de lista de reservas categorias individuais</span>
+										<a href="reuniao.php">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<span>Cadastro (Reunião LEEMG)</span>
 										</a>
 									</li>
-									<li class="nav-active">
-										<a href="alterar-cadastro.html">
-											<i class="fa" href=""aria-hidden="true"></i>
-											<span>Alterações cadastrais</span>
-										</a>
-                                    </li>
 								</ul>
 							</div>
 						</div>
@@ -165,26 +159,29 @@
 									<h2 class="panel-title">Enviar arquivo MP3</h2>
 								</header>
 								<div class="panel-body">
-									<form class="form-horizontal form-bordered" method="get">														
+									<form>
 										<div class="form-group">
-											<label class="col-md-3 control-label">Upload de arquivo</label>
+											<label class="col-md-3 control-label">Enviar a MP3 <span class="required">*</span></label>
 											<div class="col-md-6">
 												<div class="fileupload fileupload-new" data-provides="fileupload">
 													<div class="input-append">
-														<div class="uneditable-input">
-															<i class="fa fa-file fileupload-exists"></i>
-															<span class="fileupload-preview"></span>
-														</div>
 														<span class="btn btn-default btn-file">
-															<span class="fileupload-exists">Alterar</span>
-															<span class="fileupload-new">arquivo selecionado</span>
 															<input type="file" />
 														</span>
-														<a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Retirar</a>
 													</div>
 												</div>
 											</div>
 										</div>
+
+										<div class="row">
+											<div class="col-sm-4 text-right"></div>
+											<div class="col-sm-4 text-right">
+												<button type="submit" class="btn btn-primary hidden-xs">Concluir</button>
+												<button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Concluir</button>
+											</div>
+										</div>
+										<p></p>
+
 									</form>
 								</div>
 							</section>

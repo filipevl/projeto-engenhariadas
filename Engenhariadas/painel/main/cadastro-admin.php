@@ -78,10 +78,6 @@
 						<div class="dropdown-menu">
 							<ul class="list-unstyled">
 								<li class="divider"></li>
-<!-- <li>
-									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> Meu Perfil</a>
-								</li>
--->
 								<li>
 									<a role="menuitem" tabindex="-1" href="../../login/user-admin/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
@@ -157,7 +153,7 @@
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
+						<h2>Cadastro de usuários admins</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
@@ -166,18 +162,72 @@
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Painel de Controle</span></li>
+								<li><span>Cadastrar Admin</span></li>
 							</ol>
 					
 							<a class="sidebar-right-toggle"></a>
 						</div>
 					</header>
 					<div class="row">
-						<div class="col-md-6">
-							<section class="panel">
-
-                            </section>
-						</div>
+                        <div class="col-md-12">
+                            <form id="form" action="forms-validation.html" class="form-horizontal">
+                                <section class="panel">
+                                    <header class="panel-heading">
+                                        <h2 class="panel-title">Cadastro</h2>
+                                        <p class="panel-subtitle">
+                                            Cadastro de usuários administradores
+                                        </p>
+                                    </header>
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Nome completo<span class="required">*</span></label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="fullname" class="form-control" placeholder="ex: João da Silva" required/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">E-mail <span class="required">*</span></label>
+                                            <div class="col-sm-9">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </span>
+                                                    <input type="email" name="email" class="form-control" placeholder="ex: email@email.com" required/>
+                                                </div>
+                                            </div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="inputPassword">Senha</label>
+											<div class="col-md-6">
+												<input type="password" class="form-control" placeholder="" id="inputPassword">
+											</div>
+										</div>
+										<!--
+                                        <div class="form-group">
+                                            <label class="col-sm-3 control-label">Permissões <span class="required">*</span></label>
+                                            <div class="col-sm-9">
+                                                <div class="checkbox-custom chekbox-primary">
+                                                    <input id="create" value="project" type="checkbox" name="for[]" required />
+                                                    <label for="create">Criar usuários administradores</label>
+                                                </div>
+                                                <div class="checkbox-custom chekbox-primary">
+                                                    <input id="read" value="website" type="checkbox" name="for[]" />
+                                                    <label for="read">Editar informações</label>
+                                                </div>
+                                            </div>
+										</div>
+										-->
+                                    </div>
+                                    <footer class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-sm-offset-3">
+                                                <button class="btn btn-primary">Cadastrar</button>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </section>
+                            </form>
+                        </div>
 					</div>
 				</section>
 			</div>

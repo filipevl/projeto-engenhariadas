@@ -146,7 +146,7 @@ body .btn-primary:focus {
 	border-color: #0077b3 !important;
 	background-color: #0077b3;
 }
-
+ 
 body .btn-primary[disabled] {
 	border-color: #33bbff !important;
 	background-color: #33bbff;
