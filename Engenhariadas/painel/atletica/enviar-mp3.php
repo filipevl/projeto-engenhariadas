@@ -69,7 +69,6 @@
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
 								<span class="name"><?php echo $nomeUser; ?></span>
-								<span class="role">Administrador</span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -156,7 +155,7 @@
 						<div class="col-xs-12">
 							<section class="panel">
 								<header class="panel-heading">
-									<h2 class="panel-title">Enviar arquivo MP3</h2>
+									<h2 class="panel-title">Enviar arquivo MP3 - Cheerle</h2>
 								</header>
 								<div class="panel-body">
 									<form>

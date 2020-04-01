@@ -34,7 +34,9 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/43252089_1765515140219570_3689849392321265664_n.png" alt="IMG">
+					<a href="index.php">
+						<img src="images/43252089_1765515140219570_3689849392321265664_n.png" alt="IMG">
+					</a>
 				</div>
 
 				<form method="POST" action="login/user-admin/logar.php" class="login100-form validate-form">

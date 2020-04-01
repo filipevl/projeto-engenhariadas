@@ -72,7 +72,6 @@
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
 								<span class="name"><?php echo $nomeUser; ?></span>
-								<span class="role">Administrador</span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -224,7 +223,6 @@
 								<div class="col-md-6">
 									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="futebol" style="display: none;">
 										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
 									</select>
 								</div>
 							</div>
@@ -333,14 +331,13 @@
 								<label class="col-md-3 control-label">Xadrez<span class="required">*</span></label>
 								<div class="col-md-6">
 									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="xadrez" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
+										<option value="masculino">X</option>
 									</select>
 								</div>
 							</div>
 
 							<div class="form-group">
-								<label class="col-md-3 control-label">Enviar a planilha<span class="required">*</span></label>
+								<label class="col-md-3 control-label">Enviar a planilha de atletas geral de atleta<span class="required">*</span></label>
 								<div class="col-md-6">
 									<div class="fileupload fileupload-new" data-provides="fileupload">
 										<div class="input-append">
