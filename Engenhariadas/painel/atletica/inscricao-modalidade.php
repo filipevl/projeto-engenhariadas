@@ -72,7 +72,6 @@
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
 								<span class="name"><?php echo $nomeUser; ?></span>
-								<span class="role">Administrador</span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -82,7 +81,7 @@
 							<ul class="list-unstyled">
 								<li class="divider"></li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="../../login/user-admin/logout.php"><i class="fa fa-power-off"></i> Sair</a>
+									<a role="menuitem" tabindex="-1" href="../../login/user-atletica/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
 							</ul>
 						</div>
