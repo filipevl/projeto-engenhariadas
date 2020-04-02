@@ -4758,7 +4758,7 @@ html.dark .open > .dropdown-toggle.btn-default {
 .notifications > li {
 	float: left;
 	margin: 0 10px 0 0;
-	position: relative;
+	position: absolute;
 }
 
 .notifications > li .notification-icon {
@@ -4767,7 +4767,7 @@ html.dark .open > .dropdown-toggle.btn-default {
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
 	display: inline-block;
 	height: 30px;
-	position: relative;
+	position: absolute;
 	width: 30px;
 	text-align: center;
 }

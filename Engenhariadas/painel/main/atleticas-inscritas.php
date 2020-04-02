@@ -58,7 +58,7 @@
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
 					</div>
 				</div>
-			
+				
 				<!-- start: user box -->
 				<div class="header-right">
 					<span class="separator"></span>
@@ -84,6 +84,16 @@
 							</ul>
 						</div>
 					</div>
+				</div>
+
+				<div class="header-right">
+					<ul class="notifications">
+						<li>
+							<a href="validar.php" class="dropdown-toggle notification-icon">
+								<i class="fa fa-tasks"></i>
+							</a>
+						</li>
+					</ul>
 				</div>
 				<!-- end: search & user box -->
 			</header>
@@ -137,16 +147,21 @@
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="confronto-chaveamento.php">
+										<a href="chaveamento.php">
 											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Confroto/Chaveamento</span>
+											<span>Chaveamento</span>
+										</a>
+                                    </li>
+                                    <li class="nav-active">
+										<a href="tabelamento.php">
+											<i class="fa fa-key" href=""aria-hidden="true"></i>
+											<span>Tabelamento</span>
 										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-				
 				</aside>
 				<!-- end: sidebar -->
 
