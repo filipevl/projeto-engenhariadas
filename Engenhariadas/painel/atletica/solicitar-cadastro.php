@@ -96,10 +96,13 @@
 							</div>
 
 							<div class="form-group mb-lg">
-								<label>Telefone<span class="required">*</span></label>
-								<input type="tel" name="telefone" pattern="[0-9]{11}" class="form-control input-lg">
-								<small>Somente números no formato: (**) *********</small>
-								<!--<input name="telefone" type="number" class="form-control input-lg" /> -->
+								<label>Telefone  <span class="required">*</span></label>
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="fa fa-phone"></i>
+									</span>
+									<input id="phone" data-plugin-masked-input="" data-input-mask="(XX) 9 9999-9999" placeholder="(XX) 9 9999-9999" type="tel" name="telefone" pattern="[0-9]{11}" class="form-control">
+								</div>
 							</div>
 
 							<div class="form-group mb-lg">
@@ -114,8 +117,12 @@
 							
 							<div class="form-group mb-lg">
 								<label>CNPJ<span class="required">*</span></label>
-								<input type="text" name="cnpj" pattern="[0-9]{14}" class="form-control input-lg">
-								<!--<input name="cnpj" type="" class="form-control input-lg" /> -->
+									<div class="input-group">
+										<span class="input-group-addon">
+											<i class="fa fa-archive"></i>
+										</span>
+										<input type="text" name="cnpj" pattern="[0-9]{14}" id="fc_inputmask_1" data-plugin-masked-input="" data-input-mask="99.999.999/9999-99" placeholder="99.999.999/9999-99" class="form-control">
+									</div>
 							</div>
 
 							<div class="form-group mb-none">
