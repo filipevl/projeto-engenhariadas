@@ -158,14 +158,14 @@
 									<h2 class="panel-title">Enviar arquivo MP3 - Cheerle</h2>
 								</header>
 								<div class="panel-body">
-									<form>
+									<form enctype="multipart/form-data" action="upload-mp3.php" methot="POST">
 										<div class="form-group">
-											<label class="col-md-3 control-label">Enviar a MP3 <span class="required">*</span></label>
+											<label class="col-md-3 control-label">Enviar MP3 <span class="required">*</span></label>
 											<div class="col-md-6">
 												<div class="fileupload fileupload-new" data-provides="fileupload">
 													<div class="input-append">
 														<span class="btn btn-default btn-file">
-															<input type="file" />
+															<input type="file" name="arquivo" />
 														</span>
 													</div>
 												</div>
