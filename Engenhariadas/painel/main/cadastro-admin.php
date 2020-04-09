@@ -213,19 +213,19 @@
 											<input type="password" name="senha" class="form-control" required/>
 										</div>
 									</div>
-									<!--<div class="form-group">
+									<div class="form-group">
 										<label class="col-sm-3 control-label">Permissões <span class="required">*</span></label>   
 										<div class="col-sm-9">
 											<div class="checkbox-custom chekbox-primary">
 												<input id="create" value="project" type="checkbox" name="for[]" required />
-												<label for="create">Criar usuários administradores</label>
+												<label for="create">Permissão total</label>
 											</div>
 											<div class="checkbox-custom chekbox-primary">
 												<input id="read" value="website" type="checkbox" name="for[]" />
-												<label for="read">Editar e validar informações</label>
+												<label for="read">Permissão parcial</label>
 											</div>
 										</div>
-									</div>-->
+									</div>
 								</div>
 								<footer class="panel-footer">
 									<div class="row">
