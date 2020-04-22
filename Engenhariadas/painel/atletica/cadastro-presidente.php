@@ -23,12 +23,19 @@
         if($u->cadastrar($nome, $atletica, $email, $senha, $telefone, $instituicao, $cnpj, $cidade) == true){
             if(isset($_SESSION['cadastro'])){
                 header("Location: ../../index.php");
-                
+                echo "<script type='javascript'>alert('Email enviado com Sucesso!');";
+                echo "javascript:window.location='../../index.php';</script>";
+                //javascript:alert('Solicitação de cadastro enviada com sucesso!');
+                //javascript:window.location.assign("../../index.php");
             }else{
                 header("location: solicitar-cadastro.php");
+                //javascript:alert('Solicitação de cadastro com erro!');
+                //javascript:window.location.assign(" solicitar-cadastro.php");
             }
         }else{
-        header("location: solicitar-cadastro.php");
+            header("location: solicitar-cadastro.php");
+            //javascript:alert('Solicitação de cadastro com erro!');
+            //javascript:window.location.assign("solicitar-cadastro.php");
         }
     }
 

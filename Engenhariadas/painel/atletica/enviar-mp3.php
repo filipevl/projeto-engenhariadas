@@ -165,7 +165,7 @@
 												<div class="fileupload fileupload-new" data-provides="fileupload">
 													<div class="input-append">
 														<span class="btn btn-default btn-file">
-															<input type="file" name="fileToUpload" />
+															<input type="file" name="audioFile" />
 														</span>
 													</div>
 												</div>
@@ -175,8 +175,8 @@
 										<div class="row">
 											<div class="col-sm-4 text-right"></div>
 											<div class="col-sm-4 text-right">
-												<button type="submit" name="submit" class="btn btn-primary hidden-xs">Enviar Arquivo</button>
-												<button type="submit" name="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Enviar Arquivo</button>
+												<input type="submit" name="save" value="Enviar Arquivo" class="btn btn-primary hidden-xs" />
+												<!--<input type="submit" name="save" value="Enviar Arquivo" class="btn btn-primary btn-block btn-lg visible-xs mt-lg" /> -->
 											</div>
 										</div>
 										<p></p>

@@ -1,14 +1,38 @@
 <?php
 
-    if (isset($_POST['submit'])){
+    /*echo "Upload sucessully!";
 
-        $arquivo = $_FILES['arquivo'];
+    if (isset($_POST["save"]) && $_POST["save"]=="Enviar Arquivo") {
+        
+        
+        
+        echo "Upload sucessully!";
 
-        $arquivoNome = $_FILES['arquivo']['name'];
-        $arquivoTmpNome = $_FILES['arquivo']['tmp_name'];
-        $arquivoSize = $_FILES['arquivo']['size'];
-        $arquivoError = $_FILES['arquivo']['error'];
-        $arquivoType = $_FILES['arquivo']['type'];
+        $dir = 'uploads/';
+        $audio_path = $dir.basename($_FILES['audioFile']['name']);
+
+
+        if(move_uploaded_file($_FILES['audioFile']['tmp_name'], $audio_path)){
+            
+            echo "Upload sucessully!";
+            header("Location: enviar-mp3.php");
+        }else{
+            header("Location: enviar-mp3.php");
+        }
+    }else{
+        header("Location: index.php");
+    }
+    */
+    
+     if (isset($_POST['save'])){
+
+        $arquivo = $_FILES['audioFile'];
+
+        $arquivoNome = $_FILES['audioFile']['name'];
+        $arquivoTmpNome = $_FILES['audioFile']['tmp_name'];
+        $arquivoSize = $_FILES['audioFile']['size'];
+        $arquivoError = $_FILES['audioFile']['error'];
+        $arquivoType = $_FILES['audioFile']['type'];
 
         $arquivoExt = explode('.', $arquivoNome);
         $arquivoAtualExt = strtolower(end($arquivoExt));
@@ -32,7 +56,8 @@
         }else{
             echo "Você deve escolher arquivos de outro tipo!";
         }
+    }else{
+        header("Location: index.php");
     }
-        
 
 ?>
