@@ -155,17 +155,17 @@
 						<div class="col-xs-12">
 							<section class="panel">
 								<header class="panel-heading">
-									<h2 class="panel-title">Enviar arquivo MP3 - cheerleader</h2>
+									<h2 class="panel-title">Enviar arquivo MP3 - Cheerleader</h2>
 								</header>
 								<div class="panel-body">
-									<form action="upload-mp3.php" methot="POST" enctype="multipart/form-data" >
+									<form action="upload-mp.php" methot="POST" enctype="multipart/form-data" >
 										<div class="form-group">
 											<label class="col-md-3 control-label">Enviar MP3 <span class="required">*</span></label>
 											<div class="col-md-6">
 												<div class="fileupload fileupload-new" data-provides="fileupload">
 													<div class="input-append">
 														<span class="btn btn-default btn-file">
-															<input type="file" name="arquivo" />
+															<input type="file" name="fileToUpload" />
 														</span>
 													</div>
 												</div>

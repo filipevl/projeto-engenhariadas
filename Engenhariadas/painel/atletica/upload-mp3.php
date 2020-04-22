@@ -23,6 +23,7 @@
                     move_uploaded_file($arquivoTmpNome, $arquivoDestino);
                     header("Location: index.php");
                 }else{
+                    header("Location: enviar-mp3.php");
                     echo "Seu arquivo é muito grande";
                 }
             }else{ 
