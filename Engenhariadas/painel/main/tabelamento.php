@@ -140,11 +140,33 @@
 											<span>Editar modalidades</span>
 										</a>
 									</li>
-									<li class="nav-active">
-										<a href="locais-horarios.php">
-											<i class="fa fa-map-marker" href=""aria-hidden="true"></i>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
 											<span>Locais/horários</span>
 										</a>
+										<ul class="nav nav-children" style="">
+											<li>
+												<a href="d1.php">
+													Dia 1
+												</a>
+											</li>
+											<li>
+												<a href="d2.php">
+													Dia 2
+												</a>
+											</li>
+											<li>
+												<a href="d3.php">
+													Dia 3
+												</a>
+											</li>
+											<li>
+												<a href="d4.php">
+													Dia 4
+												</a>
+											</li>
+										</ul>
 									</li>
 									<li class="nav-active">
 										<a href="chaveamento.php">

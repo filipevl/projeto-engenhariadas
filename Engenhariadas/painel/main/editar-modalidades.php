@@ -140,11 +140,33 @@
 											<span>Editar modalidades</span>
 										</a>
 									</li>
-									<li class="nav-active">
-										<a href="locais-horarios.php">
-											<i class="fa fa-map-marker" href=""aria-hidden="true"></i>
+									<li class="nav-parent">
+										<a>
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
 											<span>Locais/horários</span>
 										</a>
+										<ul class="nav nav-children" style="">
+											<li>
+												<a href="d1.php">
+													Dia 1
+												</a>
+											</li>
+											<li>
+												<a href="d2.php">
+													Dia 2
+												</a>
+											</li>
+											<li>
+												<a href="d3.php">
+													Dia 3
+												</a>
+											</li>
+											<li>
+												<a href="d4.php">
+													Dia 4
+												</a>
+											</li>
+										</ul>
 									</li>
 									<li class="nav-active">
 										<a href="chaveamento.php">
@@ -169,7 +191,7 @@
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
+						<h2>Editar modalidades</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
@@ -178,17 +200,39 @@
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Painel de Controle</span></li>
+								<li><span>Editar modalidades</span></li>
 							</ol>
 					
 							<a class="sidebar-right-toggle"></a>
 						</div>
 					</header>
 					<div class="row">
-						<div class="col-md-6">
-							<section class="panel">
-
-                            </section>
+						<div class="col-md-12">
+							<!-- A ideia é que o botão fique aqui em cima da tabela 
+								Esse botão cria uma nova linha na tabela e no banco
+							-->
+							<button type="button" class="botao">Cadastrar nova modalidades</button>
+							<div class="panel-body">
+								<div class="table-responsive">
+									<table class="table table-bordered mb-none">
+										<thead>
+											<tr>
+												<th>Modalidade</th>
+											</tr>
+										</thead>
+										<tbody>
+											<!-- <tr>
+												<td>1</td>        O back deve cuspir todas as modalidades ja existentes
+												<td>Mark</td>	  como novas linhas e em cada coluna deve haver os parametros
+												<td>Otto</td>	  ao dar um duplo clique criar um input para realização do crud
+															      Deve ter também um botão que ao clicar no botão criasse uma nova linha
+																  e nessa linha é possível crud
+												<td>@mdo</td> 
+											</tr> -->
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
