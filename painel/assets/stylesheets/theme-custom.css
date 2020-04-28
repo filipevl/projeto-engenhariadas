@@ -1,0 +1,122 @@
+/* Adicione aqui todas as suas personalizações de CSS */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.btnAdd {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #47a447;
+	border-color: #47a447;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.btnAdd:hover {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #47a447da;
+	border-color: #47a447;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.btnCan {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #d9a704;
+	border-color: #d9a704;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.btnCan:hover {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #d9a704c7;
+	border-color: #d9a704;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+
+.btnRed {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #d43131;
+	border-color: #d43131d5;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btnRed:hover {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #d43131d5;
+	border-color: #d43131d5;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btnBlue {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #0e53e9;
+	border-color: #0e53e9;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.btnBlue:hover {
+    color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #0e53e9e7;
+	border-color: #0e53e9e7;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+

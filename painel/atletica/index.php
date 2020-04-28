@@ -1,5 +1,5 @@
 <?php 
-	require '../../login/user-admin/verifica.php';
+	require '../../login/user-atletica/verifica.php';
 
 	if(isset($_SESSION['idusuario']) && !empty($_SESSION['idusuario'])) : ?>
 <!doctype html>
@@ -52,13 +52,13 @@
 			<header class="header">
 				<div class="logo-container">
 					<a class="logo">
-						<img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
+                        <img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
 					</div>
 				</div>
-				
+			
 				<!-- start: user box -->
 				<div class="header-right">
 					<span class="separator"></span>
@@ -69,7 +69,6 @@
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
 								<span class="name"><?php echo $nomeUser; ?></span>
-								<span class="role">Administrador</span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -79,21 +78,11 @@
 							<ul class="list-unstyled">
 								<li class="divider"></li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="../../login/user-admin/logout.php"><i class="fa fa-power-off"></i> Sair</a>
+									<a role="menuitem" tabindex="-1" href="../../login/user-atletica/logout.php"><i class="fa fa-power-off"></i> Sair</a>
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
-
-				<div class="header-right">
-					<ul class="notifications">
-						<li>
-							<a href="validar.php" class="dropdown-toggle notification-icon">
-								<i class="fa fa-tasks"></i>
-							</a>
-						</li>
-					</ul>
 				</div>
 				<!-- end: search & user box -->
 			</header>
@@ -121,124 +110,70 @@
 											<i class="fa fa-home" aria-hidden="true"></i>
 											<span>Página inicial</span>
 										</a>
-									</li>
-									<li class="nav-active">
-										<a href="cadastro-admin.php">
-											<i class="fa fa-group" aria-hidden="true"></i>
-											<span>Cadastrar Admin</span>
-										</a>
-									</li>
-                                    <li class="nav-active">
-										<a href="atleticas-inscritas.php">
-											<i class="fa fa-empire" aria-hidden="true"></i>
-											<span>Atléticas inscritas</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="editar-modalidades.php">
-											<i class="fa fa-file-code-o" href=""aria-hidden="true"></i>
-											<span>Editar modalidades</span>
-										</a>
-									</li>
-									<li class="nav-parent">
-										<a>
-											<i class="fa fa-map-marker" aria-hidden="true"></i>
-											<span>Locais/horários</span>
-										</a>
-										<ul class="nav nav-children" style="">
-											<li>
-												<a href="d1.php">
-													Dia 1
-												</a>
-											</li>
-											<li>
-												<a href="d2.php">
-													Dia 2
-												</a>
-											</li>
-											<li>
-												<a href="d3.php">
-													Dia 3
-												</a>
-											</li>
-											<li>
-												<a href="d4.php">
-													Dia 4
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-active">
-										<a href="chaveamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Chaveamento</span>
-										</a>
                                     </li>
-                                    <li class="nav-active">
-										<a href="tabelamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Tabelamento</span>
+									<li class="nav-active">
+										<a href="inscricao-modalidade.php">
+											<i class="fa fa-users" aria-hidden="true"></i>
+											<span>Inscrição/Modalidades</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="inscricao-modalidade-individual.php">
+											<i class="fa fa-user" aria-hidden="true"></i>
+											<span>Inscrição/Modalidades individuais</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="restricao-modalidade.php">
+											<i class="fa fa-warning" aria-hidden="true"></i>
+											<span>Restricao/Modalidade</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="enviar-mp3.php">
+											<i class="fa fa-file-sound-o" aria-hidden="true"></i>
+											<span>Envio de arquivo MP3</span>
+										</a>
+									</li>
+									<li class="nav-active">
+										<a href="reuniao.php">
+											<i class="fa fa-plus" aria-hidden="true"></i>
+											<span>Cadastro (Reunião LEEMG)</span>
 										</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
+				
 				</aside>
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Atléticas inscritas</h2>
+						<h2>Painel de Controle</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
-									<a href="index.html">
+									<a href="index.php">
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Atléticas inscritas</span></li>
+								<li><span>Painel de Controle</span></li>
 							</ol>
 					
-							<a class="sidebar-right-toggle" ></a>
+							<a class="sidebar-right-toggle"></a>
 						</div>
 					</header>
-					<div class="form-group">
-						<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>
+					<div class="row">
 						<div class="col-md-6">
-							<select name="instituicao" class="form-control"> // Check box com a instituição
-								
-								<!-- <?php
-
-									// Bucar e exibir dados da coluna instituição dica: echo <option value="x">$variável_do_banco</option>
-
-								?> -->
-
-							</select>
-						</div>
-					</div>
-					<div class="panel-body">
-						<div class="table-responsive">
-							<table class="table table-striped mb-none">
-								<thead>
-									<tr>
-										<th>Presidente</th>
-										<th>Atlética</th>
-										<th>Telefone</th>
-										<th>Cidade</th>
-										<th>E-mail</th>
-										<th>CNPJ    <button type="button" class="btn"><i class="fa fa-thumbs-up"></i> </button> </th>
-									 </tr> <!-- O back deve criar um input desse botão que muda o valor na coluna confirmado no banco -->
-								</thead>
-								<tbody>
-									<!-- 
-									<tr>
-									o back tem que buscar os dados de cada coluna e mostrar em cada coluna	
-									</tr> -->
-								</tbody>
-							</table>
+							<section class="panel">
+								<div>
+									<input type="button" value="Clique em mim" onclick="show_alert()">
+								</div>
+                            </section>
 						</div>
 					</div>
 				</section>
@@ -255,6 +190,8 @@
 		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
 		
 		<!-- Specific Page Vendor -->
+		<script src="../assets/javascripts/main.js"></script>
+
 		<script src="../assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
 		<script src="../assets/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
 		<script src="../assets/vendor/jquery-appear/jquery.appear.js"></script>
@@ -297,6 +234,6 @@
 </html>
 
 <?php 
-	else: header("Location:../../admin.php"); 
+	else: header("Location:../../index.php"); 
 	endif; 
 ?>

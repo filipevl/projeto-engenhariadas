@@ -184,57 +184,67 @@
 							</div>
 						</div>
 					</div>
-				
 				</aside>
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Editar modalidades</h2>
+						<h2>Atléticas inscritas</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
-									<a href="index.php">
+									<a href="index.html">
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Editar modalidades</span></li>
+								<li><span>Atléticas inscritas</span></li>
 							</ol>
 					
-							<a class="sidebar-right-toggle"></a>
+							<a class="sidebar-right-toggle" ></a>
 						</div>
 					</header>
-					<div class="row">
-						<div class="col-md-12">
-							<!-- A ideia é que o botão fique aqui em cima da tabela 
-								Esse botão cria uma nova linha na tabela e no banco
-							-->
-							<button type="button" class="botao">Cadastrar nova modalidades</button>
-							<div class="panel-body">
-								<div class="table-responsive">
-									<table class="table table-bordered mb-none">
-										<thead>
-											<tr>
-												<th>Modalidade</th>
-											</tr>
-										</thead>
-										<tbody>
-											<!-- <tr>
-												<td>1</td>        O back deve cuspir todas as modalidades ja existentes
-												<td>Mark</td>	  como novas linhas e em cada coluna deve haver os parametros
-												<td>Otto</td>	  ao dar um duplo clique criar um input para realização do crud
-															      Deve ter também um botão que ao clicar no botão criasse uma nova linha
-																  e nessa linha é possível crud
-												<td>@mdo</td> 
-											</tr> -->
-										</tbody>
-									</table>
-								</div>
-							</div>
+					<div class="form-group">
+						<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>
+						<div class="col-md-6">
+							<select name="instituicao" class="form-control"> // Check box com a instituição
+								<option>Atletica Y</option>
+
+								<option>Atletica X</option>
+								<!-- <?php
+
+									// Bucar e exibir dados da coluna instituição dica: echo <option value="x">$variável_do_banco</option>
+
+								?> -->
+
+							</select>
 						</div>
 					</div>
+					
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped mb-none">
+								<thead>
+									<tr>
+										<th>Presidente</th>
+										<th>Atlética</th>
+										<th>Telefone</th>
+										<th>Cidade</th>
+										<th>E-mail</th>
+										<th>CNPJ    <button type="button" class="btn"><i class="fa fa-thumbs-up"></i> </button> </th>
+									 </tr> <!-- O back deve criar um input desse botão que muda o valor na coluna confirmado no banco -->
+								</thead>
+								<tbody>
+									<!-- 
+									<tr>
+									o back tem que buscar os dados de cada coluna e mostrar em cada coluna	
+									</tr> -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				
 				</section>
 			</div>
 		</section>

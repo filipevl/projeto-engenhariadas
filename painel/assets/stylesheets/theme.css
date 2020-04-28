@@ -2452,7 +2452,7 @@ ul.nav-main li .nav-children .nav-children .nav-children li a {
 }
 
 .page-header h2 {
-	color: rgb(0, 0, 0);
+	color: white;
 	border-bottom: 4px solid #cccccc;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
@@ -5592,7 +5592,7 @@ html.header-dark .userbox .dropdown-menu a {
 }
 
 .panel-title {
-	color: #000000;
+	color: white;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 20px;
@@ -5601,7 +5601,7 @@ html.header-dark .userbox .dropdown-menu a {
 }
 
 .panel-subtitle {
-	color: #000000;
+	color: white;
 	font-size: 12px;
 	line-height: 1.2em;
 	margin: 7px 0 0;
