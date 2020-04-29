@@ -1,12 +1,12 @@
 /* Adicione aqui todas as suas personalizações de CSS */
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover {
     text-decoration: none;
-    color: white;
+    color: #777777;
 }
 
 .btnAdd {

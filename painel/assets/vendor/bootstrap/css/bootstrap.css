@@ -4522,7 +4522,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #777777;
+  color: black;
   background-color: #ffffff;
   cursor: not-allowed;
 }
