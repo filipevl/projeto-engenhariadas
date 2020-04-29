@@ -27,9 +27,7 @@
 		<link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
 
 		<!-- Specific Page Vendor CSS -->
-		<link rel="stylesheet" href="../assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
-		<link rel="stylesheet" href="../assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
-		<link rel="stylesheet" href="../assets/vendor/morris/morris.css" />
+		<link rel="stylesheet" href="../assets/vendor/pnotify/pnotify.custom.css" />
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="../assets/stylesheets/theme.css" />
@@ -98,18 +96,13 @@
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
-
-			<div class="inner-wrapper">
-				<!-- inicio: sidebar esquerdo -->
-				<?php 
+           <div class="inner-wrapper">
+                <?php 
 					require 'menu-esquerdo.html';
-				?>
-				<!-- end: sidebar -->
-
-				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
-				<section role="main" class="content-body">
+                ?>
+                <section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Atléticas inscritas</h2>
+						<h2>Dados Cadastrais</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
@@ -118,39 +111,44 @@
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Atléticas inscritas</span></li>
+								<li><span>Dados Cadastrais</span></li>
 							</ol>
 					
 							<a class="sidebar-right-toggle" ></a>
 						</div>
-					</header>
-					<div class="form-group">
-						<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>
-						<div class="col-md-6">
-							<select name="instituicao" class="form-control"> // Check box com a instituição
-								<option>UFMG</option>
+                    </header>
+                    
+                    <div class="panel-body">
+                        <button id="default-success" class="btnCNPJ">Validar CNPJ</button>
+                    </div>
 
-								<option>UFV</option>
-								<!-- <?php
-
-									// Bucar e exibir dados da coluna instituição dica: echo <option value="x">$variável_do_banco</option>
-
-								?> -->
-
-							</select>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped mb-none">
+								<thead>
+									<tr>
+										<th>Presidente</th>
+										<th>Atlética</th>
+										<th>Telefone</th>
+										<th>Cidade</th>
+										<th>E-mail</th>
+										<th>CNPJ</th>
+									 </tr>
+								</thead>
+								<tbody>
+									<!-- 
+									<tr>
+									o back tem que buscar os dados de cada coluna e mostrar em cada coluna	
+									</tr> -->
+								</tbody>
+							</table>
 						</div>
 					</div>
-					<div class="panel-body">
-						<button id="default-primary" class="btnAtleticas">Dados Cadastrais</button>
-						<button id="default-notice" class="btnAtleticas">Baixar MP3</button>
-						<button id="default-success" class="btnAtleticas">Modalidades inscrittas</button>
-						<button id="default-info" class="btnAtleticas">Lista geral de atletas</button>
-						<button id="default-error" class="btnAtleticas">Lista individuais</button>
-						<button id="default-dark" class="btnAtleticas">Planilha da reunião</button>
-					</div>
+
 				</section>
 			</div>
 		</section>
+
 		<!-- Vendor -->
 		<script src="../assets/vendor/jquery/jquery.js"></script>
 		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -158,7 +156,10 @@
 		<script src="../assets/vendor/nanoscroller/nanoscroller.js"></script>
 		<script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="../assets/vendor/magnific-popup/magnific-popup.js"></script>
-		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+        <script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+        <!-- Specific Page Vendor -->
+		<script src="../assets/vendor/pnotify/pnotify.custom.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
 		<script src="../assets/javascripts/theme.js"></script>
@@ -167,11 +168,15 @@
 		<script src="../assets/javascripts/theme.custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
-		<script src="../assets/javascripts/theme.init.js"></script>
+        <script src="../assets/javascripts/theme.init.js"></script>
+        
+        <!-- Examples -->
+		<script src="../assets/javascripts/ui-elements/examples.notifications.js"></script>
+		
 	</body>
 </html>
 
 <?php 
-	else: header("Location:../admin.php"); 
+	else: header("Location:../../admin.php"); 
 	endif; 
 ?>
