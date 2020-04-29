@@ -101,91 +101,9 @@
 
 			<div class="inner-wrapper">
 				<!-- inicio: sidebar esquerdo -->
-				<aside id="sidebar-left" class="sidebar-left">
-				
-					<div class="sidebar-header">
-						<div class="sidebar-title">
-							Menu Principal
-						</div>
-						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
-							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
-						</div>
-					</div>
-				
-					<div class="nano">
-						<div class="nano-content">
-							<nav id="menu" class="nav-main" role="navigation">
-								<ul class="nav nav-main">
-									<li class="nav-active">
-										<a href="index.php">
-											<i class="fa fa-home" aria-hidden="true"></i>
-											<span>Página inicial</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="cadastro-admin.php">
-											<i class="fa fa-group" aria-hidden="true"></i>
-											<span>Cadastrar Admin</span>
-										</a>
-									</li>
-                                    <li class="nav-active">
-										<a href="atleticas-inscritas.php">
-											<i class="fa fa-empire" aria-hidden="true"></i>
-											<span>Atléticas inscritas</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="editar-modalidades.php">
-											<i class="fa fa-file-code-o" href=""aria-hidden="true"></i>
-											<span>Editar modalidades</span>
-										</a>
-									</li>
-									<li class="nav-parent">
-										<a>
-											<i class="fa fa-map-marker" aria-hidden="true"></i>
-											<span>Locais/horários</span>
-										</a>
-										<ul class="nav nav-children" style="">
-											<li>
-												<a href="d1.php">
-													Dia 1
-												</a>
-											</li>
-											<li>
-												<a href="d2.php">
-													Dia 2
-												</a>
-											</li>
-											<li>
-												<a href="d3.php">
-													Dia 3
-												</a>
-											</li>
-											<li>
-												<a href="d4.php">
-													Dia 4
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-active">
-										<a href="chaveamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Chaveamento</span>
-										</a>
-                                    </li>
-                                    <li class="nav-active">
-										<a href="tabelamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Tabelamento</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				
-				</aside>
+				<?php 
+					require 'menu-esquerdo.html';
+				?>
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
