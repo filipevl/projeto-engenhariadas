@@ -107,67 +107,14 @@
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
-				<section role="main" class="content-body">
-					<header class="page-header">
-						<h2>Atléticas inscritas</h2>
-					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.html">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Atléticas inscritas</span></li>
-							</ol>
-					
-							<a class="sidebar-right-toggle" ></a>
-						</div>
-					</header>
-					<div class="form-group">
-						<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>
-						<div class="col-md-6">
-							<select name="instituicao" class="form-control"> // Check box com a instituição
-								<option>UFMG</option>
-
-								<option>UFV</option>
-								<!-- <?php
-
-									// Bucar e exibir dados da coluna instituição dica: echo <option value="x">$variável_do_banco</option>
-
-								?> -->
-
-							</select>
-						</div>
-					</div>
-					<div class="panel-body">
-						<button id="default-primary" class="btnAtleticas">Dados Cadastrais</button>
-						<button id="default-notice" class="btnAtleticas">Baixar MP3</button>
-						<button id="default-success" class="btnAtleticas">Modalidades inscrittas</button>
-						<button id="default-info" class="btnAtleticas">Lista geral de atletas</button>
-						<button id="default-error" class="btnAtleticas">Lista individuais</button>
-						<button id="default-dark" class="btnAtleticas">Planilha da reunião</button>
-					</div>
-				</section>
+				<?php 
+					require 'atletic-inc.html';
+				?>				
 			</div>
 		</section>
-		<!-- Vendor -->
-		<script src="../assets/vendor/jquery/jquery.js"></script>
-		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
-		<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
-		<script src="../assets/vendor/nanoscroller/nanoscroller.js"></script>
-		<script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-		<script src="../assets/vendor/magnific-popup/magnific-popup.js"></script>
-		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
-		
-		<!-- Theme Base, Components and Settings -->
-		<script src="../assets/javascripts/theme.js"></script>
-		
-		<!-- Theme Custom -->
-		<script src="../assets/javascripts/theme.custom.js"></script>
-		
-		<!-- Theme Initialization Files -->
-		<script src="../assets/javascripts/theme.init.js"></script>
+		<?php 
+			require 'imports.html';
+		?>
 	</body>
 </html>
 

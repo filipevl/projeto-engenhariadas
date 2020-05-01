@@ -105,7 +105,7 @@
 					require 'menu-esquerdo.html';
 				?>
 				<!-- end: sidebar -->
-
+				
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
