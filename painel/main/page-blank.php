@@ -98,42 +98,32 @@
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
-
-			<div class="inner-wrapper">
-				<!-- inicio: sidebar esquerdo -->
-				<?php 
+           <div class="inner-wrapper">
+                <?php 
 					require 'menu-esquerdo.html';
 				?>
-				<!-- end: sidebar -->
-				
-				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
+						<h2>Atléticas inscritas</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
-									<a href="index.php">
+									<a href="index.html">
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Painel de Controle</span></li>
+								<li><span>Atléticas inscritas</span></li>
 							</ol>
 					
-							<a class="sidebar-right-toggle"></a>
+							<a class="sidebar-right-toggle" ></a>
 						</div>
 					</header>
-					<div class="row">
-						<div class="col-md-6">
-							<section class="panel">
-
-                            </section>
-						</div>
-					</div>
+				
 				</section>
 			</div>
 		</section>
+
 		<!-- Vendor -->
 		<script src="../assets/vendor/jquery/jquery.js"></script>
 		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -151,6 +141,7 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="../assets/javascripts/theme.init.js"></script>
+		
 	</body>
 </html>
 

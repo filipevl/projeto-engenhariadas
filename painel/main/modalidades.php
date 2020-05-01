@@ -105,35 +105,62 @@
 					require 'menu-esquerdo.html';
 				?>
 				<!-- end: sidebar -->
-				
+
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
-					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.php">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Painel de Controle</span></li>
-							</ol>
-					
-							<a class="sidebar-right-toggle"></a>
-						</div>
+						<h2>Modalidades</h2>
 					</header>
 					<div class="row">
-						<div class="col-md-6">
-							<section class="panel">
+						<div class="col-md-12">
+							<button class="btnAdd"><a href="criar-modalidade.php">Cadastrar modalidade</a></button>
+							<button class="btnBlue"><a href="editar-modalidade.php">Editar modalidade</a></button>
 
-                            </section>
+							<div class="panel-body">
+								<div class="table-responsive">
+									<table class="table table-bordered mb-none">
+										<thead>
+											<tr>
+												<th colspan="4">Modalidades</th>
+											</tr>
+											<tr>
+												<th>Nome</th>
+												<th>Feminino</th>
+												<th>Masculino</th>
+												<th>Ambos</th>
+											</tr>
+										</thead>
+										<tbody>
+											
+											<tr>
+												<td>Futsal</td>
+												<td></td>
+												<td></td>
+												<td><strong>*</strong></td>
+											</tr>
+											
+											<!-- <tr>
+												<td>1</td>        O back deve cuspir todas as modalidades ja existentes
+												<td>Mark</td>	  como novas linhas e em cada coluna deve haver os parametros
+												<td>Otto</td>	  ao dar um duplo clique criar um input para realização do crud
+															      Deve ter também um botão que ao clicar no botão criasse uma nova linha
+																  e nessa linha é possível crud
+												<td>@mdo</td> 
+											</tr> -->
+
+
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 				</section>
 			</div>
 		</section>
+
 		<!-- Vendor -->
 		<script src="../assets/vendor/jquery/jquery.js"></script>
 		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -151,6 +178,7 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="../assets/javascripts/theme.init.js"></script>
+		
 	</body>
 </html>
 

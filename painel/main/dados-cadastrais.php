@@ -27,9 +27,7 @@
 		<link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
 
 		<!-- Specific Page Vendor CSS -->
-		<link rel="stylesheet" href="../assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
-		<link rel="stylesheet" href="../assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
-		<link rel="stylesheet" href="../assets/vendor/morris/morris.css" />
+		<link rel="stylesheet" href="../assets/vendor/pnotify/pnotify.custom.css" />
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="../assets/stylesheets/theme.css" />
@@ -98,42 +96,59 @@
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
-
-			<div class="inner-wrapper">
-				<!-- inicio: sidebar esquerdo -->
-				<?php 
+           <div class="inner-wrapper">
+                <?php 
 					require 'menu-esquerdo.html';
-				?>
-				<!-- end: sidebar -->
-				
-				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
-				<section role="main" class="content-body">
+                ?>
+                <section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
+						<h2>Dados Cadastrais</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
-									<a href="index.php">
+									<a href="index.html">
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Painel de Controle</span></li>
+								<li><span>Dados Cadastrais</span></li>
 							</ol>
 					
-							<a class="sidebar-right-toggle"></a>
+							<a class="sidebar-right-toggle" ></a>
 						</div>
-					</header>
-					<div class="row">
-						<div class="col-md-6">
-							<section class="panel">
+                    </header>
+                    
+                    <div class="panel-body">
+                        <button id="default-success" class="btnCNPJ">Validar CNPJ</button>
+                    </div>
 
-                            </section>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped mb-none">
+								<thead>
+									<tr>
+										<th>Presidente</th>
+										<th>Atlética</th>
+										<th>Telefone</th>
+										<th>Cidade</th>
+										<th>E-mail</th>
+										<th>CNPJ</th>
+									 </tr>
+								</thead>
+								<tbody>
+									<!-- 
+									<tr>
+									o back tem que buscar os dados de cada coluna e mostrar em cada coluna	
+									</tr> -->
+								</tbody>
+							</table>
 						</div>
 					</div>
+
 				</section>
 			</div>
 		</section>
+
 		<!-- Vendor -->
 		<script src="../assets/vendor/jquery/jquery.js"></script>
 		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -141,7 +156,10 @@
 		<script src="../assets/vendor/nanoscroller/nanoscroller.js"></script>
 		<script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="../assets/vendor/magnific-popup/magnific-popup.js"></script>
-		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+        <script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+        <!-- Specific Page Vendor -->
+		<script src="../assets/vendor/pnotify/pnotify.custom.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
 		<script src="../assets/javascripts/theme.js"></script>
@@ -150,7 +168,11 @@
 		<script src="../assets/javascripts/theme.custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
-		<script src="../assets/javascripts/theme.init.js"></script>
+        <script src="../assets/javascripts/theme.init.js"></script>
+        
+        <!-- Examples -->
+		<script src="../assets/javascripts/ui-elements/examples.notifications.js"></script>
+		
 	</body>
 </html>
 

@@ -101,91 +101,9 @@
 
 			<div class="inner-wrapper">
 				<!-- inicio: sidebar esquerdo -->
-				<aside id="sidebar-left" class="sidebar-left">
-				
-					<div class="sidebar-header">
-						<div class="sidebar-title">
-							Menu Principal
-						</div>
-						<div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
-							<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
-						</div>
-					</div>
-				
-					<div class="nano">
-						<div class="nano-content">
-							<nav id="menu" class="nav-main" role="navigation">
-								<ul class="nav nav-main">
-									<li class="nav-active">
-										<a href="index.php">
-											<i class="fa fa-home" aria-hidden="true"></i>
-											<span>Página inicial</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="cadastro-admin.php">
-											<i class="fa fa-group" aria-hidden="true"></i>
-											<span>Cadastrar Admin</span>
-										</a>
-									</li>
-                                    <li class="nav-active">
-										<a href="atleticas-inscritas.php">
-											<i class="fa fa-empire" aria-hidden="true"></i>
-											<span>Atléticas inscritas</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="editar-modalidades.php">
-											<i class="fa fa-file-code-o" href=""aria-hidden="true"></i>
-											<span>Editar modalidades</span>
-										</a>
-									</li>
-									<li class="nav-parent">
-										<a>
-											<i class="fa fa-map-marker" aria-hidden="true"></i>
-											<span>Locais/horários</span>
-										</a>
-										<ul class="nav nav-children" style="">
-											<li>
-												<a href="d1.php">
-													Dia 1
-												</a>
-											</li>
-											<li>
-												<a href="d2.php">
-													Dia 2
-												</a>
-											</li>
-											<li>
-												<a href="d3.php">
-													Dia 3
-												</a>
-											</li>
-											<li>
-												<a href="d4.php">
-													Dia 4
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-active">
-										<a href="chaveamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Chaveamento</span>
-										</a>
-                                    </li>
-                                    <li class="nav-active">
-										<a href="tabelamento.php">
-											<i class="fa fa-key" href=""aria-hidden="true"></i>
-											<span>Tabelamento</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				
-				</aside>
+				<?php 
+					require 'menu-esquerdo.html';
+				?>
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
@@ -216,7 +134,6 @@
 				</section>
 			</div>
 		</section>
-
 		<!-- Vendor -->
 		<script src="../assets/vendor/jquery/jquery.js"></script>
 		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -226,33 +143,6 @@
 		<script src="../assets/vendor/magnific-popup/magnific-popup.js"></script>
 		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
 		
-		<!-- Specific Page Vendor -->
-		<script src="../assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
-		<script src="../assets/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
-		<script src="../assets/vendor/jquery-appear/jquery.appear.js"></script>
-		<script src="../assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-		<script src="../assets/vendor/jquery-easypiechart/jquery.easypiechart.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.js"></script>
-		<script src="../assets/vendor/flot-tooltip/jquery.flot.tooltip.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.pie.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.categories.js"></script>
-		<script src="../assets/vendor/flot/jquery.flot.resize.js"></script>
-		<script src="../assets/vendor/jquery-sparkline/jquery.sparkline.js"></script>
-		<script src="../assets/vendor/raphael/raphael.js"></script>
-		<script src="../assets/vendor/morris/morris.js"></script>
-		<script src="../assets/vendor/gauge/gauge.js"></script>
-		<script src="../assets/vendor/snap-svg/snap.svg.js"></script>
-		<script src="../assets/vendor/liquid-meter/liquid.meter.js"></script>
-		<script src="../assets/vendor/jqvmap/jquery.vmap.js"></script>
-		<script src="../assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
-		<script src="../assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
-		
 		<!-- Theme Base, Components and Settings -->
 		<script src="../assets/javascripts/theme.js"></script>
 		
@@ -261,10 +151,6 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="../assets/javascripts/theme.init.js"></script>
-
-
-		<!-- Examples -->
-		<script src="../assets/javascripts/dashboard/examples.dashboard.js"></script>
 	</body>
 </html>
 

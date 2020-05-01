@@ -98,42 +98,71 @@
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
-
-			<div class="inner-wrapper">
-				<!-- inicio: sidebar esquerdo -->
-				<?php 
+           <div class="inner-wrapper">
+                <?php 
 					require 'menu-esquerdo.html';
-				?>
-				<!-- end: sidebar -->
-				
-				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
-				<section role="main" class="content-body">
+                ?>
+                <section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
-					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.php">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Painel de Controle</span></li>
-							</ol>
-					
-							<a class="sidebar-right-toggle"></a>
-						</div>
+						<h2>Criar Modalidade</h2>
 					</header>
 					<div class="row">
-						<div class="col-md-6">
-							<section class="panel">
-
-                            </section>
+						<div class="col-md-12">
+                            <div>
+                                <div class="col-md-12">
+                                    <form id="form" action="cadastrar-admin.php" method="POST" class="form-horizontal">
+                                        <section class="panel">
+                                            <header class="panel-heading">
+                                                <h2 class="panel-title">Cadastrar modalidade</h2>
+                                                <p class="panel-subtitle">
+                                                    Cadastro de modalidade
+                                                </p>
+                                            </header>
+                                            <div class="panel-body">
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Nome:<span class="required">*</span></label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" name="nome" class="form-control" placeholder="Ex: Futsal" required/>
+                                                    </div>
+                                                </div>
+                                                
+                                            
+                                                <div class="form-group">
+                                                    <label class="col-sm-3 control-label">Sexo:<span class="required">*</span></label>   
+                                                    <div class="col-sm-9">
+                                                        <div class="checkbox-custom chekbox-primary">
+                                                            <input id="create" value="feminino" type="checkbox" name="for[]" required />
+                                                            <label for="create">Feminino</label>
+                                                        </div>
+                                                        <div class="checkbox-custom chekbox-primary">
+                                                            <input id="read" value="masculino" type="checkbox" name="for[]" />
+                                                            <label for="read">Masculino</label>
+                                                        </div>
+                                                        <div class="checkbox-custom chekbox-primary">
+                                                            <input id="read" value="ambos" type="checkbox" name="for[]" />
+                                                            <label for="read">Ambos</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="panel-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-9 col-sm-offset-3">
+                                                        <button class="btnAdd">Cadastrar</button>
+                                                        <button class="btnCan">Cancelar</button>
+                                                    </div>
+                                                </div>
+                                            </footer>
+                                        </section>
+                                    </form>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</section>
 			</div>
 		</section>
+
 		<!-- Vendor -->
 		<script src="../assets/vendor/jquery/jquery.js"></script>
 		<script src="../assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
@@ -151,6 +180,7 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="../assets/javascripts/theme.init.js"></script>
+		
 	</body>
 </html>
 
