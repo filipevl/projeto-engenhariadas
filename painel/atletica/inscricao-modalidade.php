@@ -154,217 +154,57 @@
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">	
-
 					<header class="page-header">
 						<h2>Inscrição/Modalidade</h2>
-					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.php">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Inscrição/Modalidade</span></li>
-							</ol>
-					
-							<a class="sidebar-right-toggle"></a>
-						</div>
-
 					</header>
 
-					
-				<div class="panel panel-sign">
-					<div class="panel-body">
-						<form>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Escolha sua série: <span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" data-plugin-multiselect id="serie">
-										<option value="serie-a" >A</option>
-										<option value="serie-b">B</option>
-									</select>
+					<button class="btnAdd">Adicionar modalidade</button>
+					<button class="btnRed">Remover modalidade</button>
+					<div class="panel panel-sign">
+						<div class="panel-body">
+							<form>
+								<div class="form-group">
+									<label class="col-md-3 control-label">Escolha sua série: <span class="required">*</span></label>
+									<div class="col-md-6">
+										<select class="form-control" data-plugin-multiselect id="serie">
+											<option value="serie-a" >A</option>
+											<option value="serie-b">B</option>
+										</select>
+									</div>
 								</div>
-							</div>
 
-							<div class="form-group">
-								<label class="col-md-3 control-label">Atletismo<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="atletismo" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
+								<div class="form-group">
+									<label class="col-md-3 control-label">Escolha a modalidade:<span class="required">*</span></label>
+									<div class="col-md-6">
+										<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="atletismo">
+											<option value="masculino">Volei - Masculino</option>
+											<option value="feminino" selected="">Volei - Feminino</option>
+										</select>
+									</div>
 								</div>
-							</div>
 
-							<div class="form-group">
-								<label class="col-md-3 control-label">Basquete<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="basquete" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>	
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Volei<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="volei" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Futebol<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="futebol" style="display: none;">
-										<option value="masculino">Masculino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Futsal<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="futsal" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Handebol<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="handebol" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Jiu-Jitsu<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="jiu-jitsu" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Judô<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="judo" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Natação<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="natacao" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Peteca<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="peteca" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Tênis de mesa<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="tenis-mes" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Tênis de campo<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="tenis-campo" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Bateria<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="bateria" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Cheer<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="cheer" style="display: none;">
-										<option value="masculino">Masculino</option>
-										<option value="feminino" selected="">Feminino</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Xadrez<span class="required">*</span></label>
-								<div class="col-md-6">
-									<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="xadrez" style="display: none;">
-										<option value="masculino">X</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-md-3 control-label">Enviar a planilha de atletas geral de atleta<span class="required">*</span></label>
-								<div class="col-md-6">
-									<div class="fileupload fileupload-new" data-provides="fileupload">
-										<div class="input-append">
-											<span class="btn btn-default btn-file">
-												<input type="file" />
-											</span>
+								<div class="form-group">
+									<label class="col-md-3 control-label">Enviar a planilha geral de atletas<span class="required">*</span></label>
+									<div class="col-md-6">
+										<div class="fileupload fileupload-new" data-provides="fileupload">
+											<div class="input-append">
+												<span class="btn btn-default btn-file">
+													<input type="file" />
+												</span>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="row">
-								<div class="col-sm-4 text-right"></div>
-								<div class="col-sm-4 text-right">
-									<button type="submit" class="btn btn-primary hidden-xs">Concluir</button>
-									<button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Concluir</button>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<button type="submit" class="btnAdd">Concluir</button>
+									</div>
 								</div>
-							</div>
-							<p></p>
-
-						</form>
+							</form>
+						</div>
 					</div>
-				</div>
-
 				</section>
-			</div>
-		</section>
 
 		<!-- Vendor -->
 		<script src="modalidades.js"></script>

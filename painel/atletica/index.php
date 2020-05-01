@@ -167,10 +167,20 @@
 							<a class="sidebar-right-toggle"></a>
 						</div>
 					</header>
+
 					<div class="row">
 						<div class="col-md-6">
 							<section class="panel">
 								<div>
+									<div class="barGreen">
+										Cadastro aprovado!
+									</div>
+									<div class="barRed">
+										Aprovação em andamento...
+									</div>
+									<button  class="btnAdd" value="">
+										<a href="alterar-cadastro.php">Alterar cadastro</a>
+									</button>
 									<input type="button" value="Clique em mim" onclick="show_alert()">
 								</div>
                             </section>

@@ -199,7 +199,7 @@
 								Esse botão cria uma nova linha na tabela e no banco
 							-->
 							<button href="google.com.br" class="btnAdd"><a href="#">Cadastrar modalidade</a></button>
-							<button class="btnBlue"><a href="#">Editar modalidade</a></button>
+							<button class="btnCan"><a href="#">Editar modalidade</a></button>
 
 							<div class="panel-body">
 								<div class="table-responsive">
@@ -260,8 +260,6 @@
 														<input type="text" name="nome" class="form-control" placeholder="Ex: Futsal" required/>
 													</div>
 												</div>
-												
-											
 												<div class="form-group">
 													<label class="col-sm-3 control-label">Sexo:<span class="required">*</span></label>   
 													<div class="col-sm-9">
@@ -296,7 +294,7 @@
 							<h1>Editar</h1>
 							<br>
 
-							<div class="col-md-12">
+								<div class="col-md-12">
 									<form id="form" action="cadastrar-admin.php" method="POST" class="form-horizontal">
 										<section class="panel">
 											<header class="panel-heading">
@@ -312,8 +310,6 @@
 														<input type="text" name="nome" class="form-control" value="Futsal" required/>
 													</div>
 												</div>
-												
-											
 												<div class="form-group">
 													<label class="col-sm-3 control-label">Sexo:<span class="required">*</span></label>   
 													<div class="col-sm-9">

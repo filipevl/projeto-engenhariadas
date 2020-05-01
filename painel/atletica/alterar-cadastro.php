@@ -9,7 +9,7 @@
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
-		<title>Engenharíadas - Enviar MP3 </title>
+		<title>Engenhariadas 2020</title>
 		<meta name="keywords" content="LEEMG, Engenhariadas" />
 		<meta name="description" content="Sistema Web - Sistemas de gerenciamento de jogos do evento Engenharíadas Mineiro 2020">
 		<meta name="author" content="Infoalto">
@@ -52,7 +52,7 @@
 			<header class="header">
 				<div class="logo-container">
 					<a class="logo">
-						<img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
+                        <img src="../../images/43252089_1765515140219570_3689849392321265664_n.png" height="40" alt="Engenhariadas" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
@@ -150,42 +150,101 @@
 				<!-- end: sidebar -->
 
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
-				<section role="main" class="content-body">					
+				<section role="main" class="content-body">
+					<header class="page-header">
+						<h2>Painel de Controle</h2>
+					</header>								
+
 					<div class="row">
-						<div class="col-xs-12">
+						<div class="col-md-6">
 							<section class="panel">
-								<header class="panel-heading">
-									<h2 class="panel-title">Enviar arquivo MP3 - Cheerleader</h2>
-								</header>
-								<div class="panel-body">
-									<form action="upload-mp.php" methot="POST" enctype="multipart/form-data" >
-										<div class="form-group">
-											<label class="col-md-2">Enviar MP3 <span class="required">*</span></label>
-											<div class="col-md-6">
-												<div class="fileupload fileupload-new" data-provides="fileupload">
-													<div class="input-append">
-														<span class="btn btn-default btn-file">
-															<input type="file" name="audioFile" />
+								<div>
+									<div class="panel-body">
+										<header class="panel-heading" style="margin-bottom: 10px">
+											<h2 class="panel-title">Alterar cadastro</h2>
+											<p class="panel-subtitle">
+												Alterar cadastro da instituição
+											</p>
+										</header>
+										<form action="cadastro-presidente.php" method="POST">
+
+											<div class="form-group">
+												<label class="col-md-6 control-label">Escolha sua instituição: <span class="required">*</span></label>
+												<div class="col-md-6">
+													<select name="instituicao" class="form-control" data-plugin-multiselect id="ms_example1">
+														<option value="cefet-bh" >CEFET BH </option>
+														<option value="cefet-divinopolis">CEFET DIVINÓPOLIS</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group mb-lg">
+												<label>Nome do Presidente<span class="required">*</span></label>
+												<input name="nome" type="text" class="form-control input-lg" value="Fulano de tal" />
+											</div>
+
+											<div class="form-group mb-lg">
+												<label>Nome da Atlética<span class="required">*</span></label>
+												<input name="atletica" type="text" class="form-control input-lg" value="UFV-CRP"/>
+											</div>
+
+											<div class="form-group mb-lg">
+												<label>Telefone  <span class="required">*</span></label>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="fa fa-phone"></i>
+													</span>
+													<input id="phone" data-plugin-masked-input="" data-input-mask="(XX) 9 9999-9999" placeholder="(XX) 9 9999-9999" type="tel" name="telefone" pattern="[0-9]{11}" class="form-control">
+												</div>
+											</div>
+
+											<div class="form-group mb-lg">
+												<label>Cidade<span class="required">*</span></label>
+												<input name="cidade" type="text" class="form-control input-lg" />
+											</div>
+
+											<div class="form-group mb-lg">
+												<label>E-mail<span class="required">*</span></label>
+												<input name="email" type="email" class="form-control input-lg" />
+											</div>
+											
+											<div class="form-group mb-lg">
+												<label>CNPJ</label>
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="fa fa-archive"></i>
 														</span>
+														<input type="text" name="cnpj" pattern="[0-9]{14}" id="fc_inputmask_1" data-plugin-masked-input="" data-input-mask="99.999.999/9999-99" placeholder="99.999.999/9999-99" class="form-control">
+													</div>
+											</div>
+
+											<div class="form-group mb-none">
+												<div class="row">
+													<div class="col-sm-6 mb-lg">
+														<label>Senha<span class="required">*</span></label>
+														<input name="senha" type="password" class="form-control input-lg" />
+													</div>
+													<div class="col-sm-6 mb-lg">
+														<label>Confirmação de senha<span class="required">*</span></label>
+														<input name="pwd_confirm" type="password" class="form-control input-lg" />
 													</div>
 												</div>
 											</div>
-										</div>
 
-										<div class="row">
-											<div class="col-sm-6 text-center">
-												<input type="submit" name="save" value="Enviar Arquivo" class="btnAdd" />
-												<!--<input type="submit" name="save" value="Enviar Arquivo" class="btn btn-primary btn-block btn-lg visible-xs mt-lg" /> -->
+											<div class="row">
+												<div class="col-md-12 text-center">
+													<button class="btnAdd" type="submit"><a href="#">Salvar</a></button>
+													<button class="btnCan"><a href="index.php">Cancelar</a></button>
+												</div>
 											</div>
-										</div>
-										<p></p>
 
-									</form>
+										</form>
+									</div>
 								</div>
-							</section>
+                            </section>
 						</div>
 					</div>
-                </section>
+				</section>
 			</div>
 		</section>
 
@@ -199,6 +258,8 @@
 		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
 		
 		<!-- Specific Page Vendor -->
+		<script src="../assets/javascripts/main.js"></script>
+
 		<script src="../assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
 		<script src="../assets/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
 		<script src="../assets/vendor/jquery-appear/jquery.appear.js"></script>

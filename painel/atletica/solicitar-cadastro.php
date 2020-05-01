@@ -51,35 +51,10 @@
 						<form action="cadastro-presidente.php" method="POST">
 
 							<div class="form-group">
-								<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>
+								<label class="col-md-6 control-label">Escolha sua instituição: <span class="required">*</span></label>
 								<div class="col-md-6">
 									<select name="instituicao" class="form-control" data-plugin-multiselect id="ms_example1">
 										<option value="cefet-bh" >CEFET BH </option>
-										<option value="cefet-cvo">CEFET CURVELO</option>
-										<option value="fasar">FASAR</option>
-										<option value="fumec">FUMEC</option>
-										<option value="ibmec">IBMEC</option>
-										<option value="ifjf">IFJF</option>
-										<option value="igmg-congonhas">IGMG CONGONHAS</option>
-										<option value="ifmg-gv">IFMG GV</option>
-										<option value="newtow-paiva">NEWTON PAIVA</option>
-										<option value="puc">PUC</option>
-										<option value="uemg-jm" >UEMG JM</option>
-										<option value="uemg-pss">UEMG PSS</option>
-										<option value="ufjf">UFJF</option>
-										<option value="ufla">UFLA</option>
-										<option value="ufmg">UFMG</option>
-										<option value="ufmt">UFMT</option>
-										<option value="ufop-jm">UFOP JM</option>
-										<option value="ufsj">UFSJ</option>
-										<option value="ufsj-sl">UFSJ SL</option>
-										<option value="uftm">UFTM</option>
-										<option value="ufv" >UFV</option>
-										<option value="ufvjm-dtna">UFVJM DTNA</option>
-										<option value="ufvjm-to">UFVJM TO</option>
-										<option value="unifei">UNIFEI</option>
-										<option value="unilavras">UNILAVRAS</option>
-										<option value="unimontes">UNIMONTES</option>
 										<option value="cefet-divinopolis">CEFET DIVINÓPOLIS</option>
 									</select>
 								</div>
@@ -116,7 +91,7 @@
 							</div>
 							
 							<div class="form-group mb-lg">
-								<label>CNPJ<span class="required">*</span></label>
+								<label>CNPJ</label>
 									<div class="input-group">
 										<span class="input-group-addon">
 											<i class="fa fa-archive"></i>
