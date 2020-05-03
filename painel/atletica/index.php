@@ -142,6 +142,10 @@
 									</button>
 									<input type="button" value="Clique em mim" onclick="show_alert()">
 								</div>
+								<div class="alert alert-danger">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+									<strong>Está Faltando o CNPJ</strong> Por favor insira o CNPJ para ter acesso as outras funções. <a href="alterar-cadastro.php" class="alert-link">Insira já seu CNPJ</a> E após terá acesso ao sistema.
+								</div>
                             </section>
 						</div>
 					</div>
