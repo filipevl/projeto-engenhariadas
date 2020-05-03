@@ -134,6 +134,9 @@
 								</tr>
 							</thead>
 							<tbody>
+								<!-- Buscar e exibir os registros em cada coluna
+								
+								-->
 							</tbody>
 						</table>
 					</div>
@@ -157,6 +160,7 @@
 									<button id="dialogCancel" class="btn btn-default">Cancelar</button>
 								</div>
 							</div>
+							<!-- Sincronizar com o banco -->
 						</footer>
 					</section>
 				</div>
