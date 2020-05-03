@@ -136,6 +136,10 @@
 							</select>
 						</div>
 					</div>
+
+					<!-- Usar conceitos do Single Page Application 						
+					-->
+
 					<div class="panel-body">
 						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-default">Dados Cadastrais</button></a>
 						<a <?php 
@@ -200,7 +204,16 @@
 										</tr>
 									</thead>
 									<tbody>
-										<!--  -->
+										<!-- Buscar no banco as modalidades que a instituição estão inscritas e exibir
+										dica: laço de repetição para procurar todas as inscritas
+										armazenar nas variáveis e dentro do laço -> echo:
+										<tr>
+											<td>$mod</td>
+											<td>$masc</td>
+											<td>$fem</td>
+											<td>$mas&fem</td>
+										</tr>	
+										-->
 										<tr>
 											<td>Futebol</td>
 											<td> </td>
@@ -212,6 +225,39 @@
 							</div>
 						</div>
 					</section>
+
+					<!-- Lista geral de atletas -->
+					<section class="panel">				
+							<h2>Lista geral de atletas</h2>
+						
+						<div class="panel-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-striped table-condensed mb-none tableModalidades">
+									<thead>
+										<tr>
+											<th>Nome</th>
+											<th>RG</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- Buscar no banco o cadastro dos atletas da instituição e exibir
+										dica: laço de repetição para procurar todos os atletas
+										armazenar nas variáveis e dentro do laço -> echo:
+										<tr>
+											<td>$nome</td>
+											<td>$rg</td>
+										</tr>	
+										-->
+										<tr>
+											<td>Antoino</td>
+											<td>AA99999999</td>
+										</tr>										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+					
 				</section>
 				</section>				
 			</div>
