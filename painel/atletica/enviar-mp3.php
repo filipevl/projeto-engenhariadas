@@ -101,50 +101,9 @@
 						</div>
 					</div>
 				
-					<div class="nano">
-						<div class="nano-content">
-							<nav id="menu" class="nav-main" role="navigation">
-								<ul class="nav nav-main">
-									<li class="nav-active">
-										<a href="index.php">
-											<i class="fa fa-home" aria-hidden="true"></i>
-											<span>Página inicial</span>
-										</a>
-                                    </li>
-									<li class="nav-active">
-										<a href="inscricao-modalidade.php">
-											<i class="fa fa-users" aria-hidden="true"></i>
-											<span>Inscrição/Modalidades</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="inscricao-modalidade-individual.php">
-											<i class="fa fa-user" aria-hidden="true"></i>
-											<span>Inscrição/Modalidades individuais</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="restricao-modalidade.php">
-											<i class="fa fa-warning" aria-hidden="true"></i>
-											<span>Restricao/Modalidade</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="enviar-mp3.php">
-											<i class="fa fa-file-sound-o" aria-hidden="true"></i>
-											<span>Envio de arquivo MP3</span>
-										</a>
-									</li>
-									<li class="nav-active">
-										<a href="reuniao.php">
-											<i class="fa fa-plus" aria-hidden="true"></i>
-											<span>Cadastro (Reunião LEEMG)</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					<?php 
+						require 'menu-esquerdo.html';
+					?>
 				
 				</aside>
 				<!-- end: sidebar -->
