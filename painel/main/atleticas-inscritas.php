@@ -27,9 +27,7 @@
 		<link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
 
 		<!-- Specific Page Vendor CSS -->
-		<link rel="stylesheet" href="../assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
-		<link rel="stylesheet" href="../assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
-		<link rel="stylesheet" href="../assets/vendor/morris/morris.css" />
+		<link rel="stylesheet" href="../assets/vendor/pnotify/pnotify.custom.css" />
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="../assets/stylesheets/theme.css" />
@@ -139,10 +137,11 @@
 						</div>
 					</div>
 					<div class="panel-body">
-						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-default">Dados Cadastrais</button>
-						</a>
-						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-primary">Baixar MP3</button>
-						</a>
+						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-default">Dados Cadastrais</button></a>
+						<a <?php 
+							// Jogar no echo o link do mp3
+							echo href="#"
+						?> targed="_blank"><button type="button" class="mb-xs mt-xs mr-xs btn btn-primary">Baixar MP3</button></a>
 						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-success">Modalidades inscritas</button>
 						</a>
 						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-info">Lista geral de atletas</button>
@@ -152,8 +151,9 @@
 						<button type="button" class="mb-xs mt-xs mr-xs btn btn-danger">Planilha da reunião</button>
 						<a>
 					</div>
+					
 					<div>
-						<h1>Botão dados cadastrais</h1>
+						<h2>Botão dados cadastrais</h1>
 						
 						<div class="panel-body">
 							<button id="default-success" class="btnCNPJ">Validar CNPJ</button>
@@ -182,6 +182,7 @@
 							</div>
 						</div>
 					</div>
+					
 				</section>
 				</section>				
 			</div>
