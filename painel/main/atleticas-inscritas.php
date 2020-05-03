@@ -293,6 +293,41 @@
 							</div>
 						</div>
 					</section>
+
+					<!-- Lista geral de atletas -->
+					<section class="panel">				
+							<h2>Planilha reunião</h2>
+						
+						<div class="panel-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-striped table-condensed mb-none tableModalidades">
+									<thead>
+										<tr>
+											<th>Nome</th>
+											<th>RG</th>
+											<th>Telefone</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- Buscar no banco o cadastro para a reunião exibir
+										dica: laço de repetição para procurar todos os registros
+										armazenar nas variáveis e dentro do laço -> echo:
+										<tr>
+											<td>$nome</td>
+											<td>$rg</td>
+											<td>$fone</td>
+										</tr>	
+										-->
+										<tr>
+											<td>Antoino</td>
+											<td>AA99999999</td>
+											<td>99999999999</td>
+										</tr>										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
 				</section>
 				</section>				
 			</div>
