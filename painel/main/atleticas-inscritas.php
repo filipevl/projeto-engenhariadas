@@ -163,6 +163,7 @@
 						<div class="panel-body">
 							<button id="default-success" class="btnCNPJ">Validar CNPJ</button>
 						</div>
+						<!-- Deve ser enviada uma notificação/e-mail ao presidente da atlética que o cnpj foi validado -->
 
 						<div class="panel-body">
 							<div class="table-responsive">
@@ -257,7 +258,41 @@
 							</div>
 						</div>
 					</section>
-					
+
+					<!-- Lista geral de atletas -->
+					<section class="panel">				
+							<h2>Listas individuais</h2>
+						
+						<div class="panel-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-striped table-condensed mb-none tableModalidades">
+									<thead>
+										<tr>
+											<th>Nome</th>
+											<th>Modalidades inscritas</th>
+											<th>RG</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- Buscar no banco o cadastro dos atletas da instituição e exibir
+										dica: laço de repetição para procurar todos os atletas
+										armazenar nas variáveis e dentro do laço -> echo:
+										<tr>
+											<td>$nome</td>
+											<td>$mod-inc</td>
+											<td>$rg</td>
+										</tr>	
+										-->
+										<tr>
+											<td>Antonio</td>
+											<td>Futsal,Futebol,Peteca</td>
+											<td>AA99999999</td>
+										</tr>										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
 				</section>
 				</section>				
 			</div>
