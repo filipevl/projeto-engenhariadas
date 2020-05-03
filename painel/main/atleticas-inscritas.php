@@ -140,7 +140,7 @@
 						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-default">Dados Cadastrais</button></a>
 						<a <?php 
 							// Jogar no echo o link do mp3
-							echo href="#"
+							// echo href="#"
 						?> targed="_blank"><button type="button" class="mb-xs mt-xs mr-xs btn btn-primary">Baixar MP3</button></a>
 						<a><button type="button" class="mb-xs mt-xs mr-xs btn btn-success">Modalidades inscritas</button>
 						</a>
@@ -152,6 +152,7 @@
 						<a>
 					</div>
 					
+					<!-- Dados cadastrais -->
 					<div>
 						<h2>Botão dados cadastrais</h1>
 						
@@ -183,6 +184,34 @@
 						</div>
 					</div>
 					
+					<!-- Modalidades inscritas -->
+					<section class="panel">				
+							<h2>Modalidades inscritas</h2>
+						
+						<div class="panel-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-striped table-condensed mb-none tableModalidades">
+									<thead>
+										<tr>
+											<th>Modalidades</th>
+											<th>Masculino</th>
+											<th>Feminino</th>
+											<th>Ambos</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!--  -->
+										<tr>
+											<td>Futebol</td>
+											<td> </td>
+											<td> </td>
+											<td>#</td>
+										</tr>										
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
 				</section>
 				</section>				
 			</div>
