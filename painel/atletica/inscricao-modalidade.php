@@ -130,7 +130,7 @@
 								<div class="form-group">
 									<label class="col-md-3 control-label">Escolha a modalidade:<span class="required">*</span></label>
 									<div class="col-md-6">
-										<select class="form-control" multiple="multiple" data-plugin-multiselect="" id="atletismo">
+										<select class="form-control" data-plugin-multiselect="" id="atletismo">
 											<option value="masculino">Volei - Masculino</option>
 											<option value="feminino" selected="">Volei - Feminino</option>
 										</select>

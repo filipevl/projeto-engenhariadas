@@ -229,14 +229,14 @@ body .btn-info {
 }
 
 body .btn-info:hover {
-	border-color: #fc1d00 !important;
-	background-color: #f0270c;
+	background-color: #f76301dc;
+	border-color: #ff9203;
 }
 
 body .btn-info:active,
 body .btn-info:focus {
-	border-color: #46b8da !important;
-	background-color: #46b8da;
+	background-color: #f76301;
+	border-color: #ff9203;
 }
 
 body .btn-info[disabled] {

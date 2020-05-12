@@ -139,7 +139,7 @@
 								</div>
 								<div class="alert alert-danger">
 									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-									<strong>Está Faltando o CNPJ</strong> Por favor insira o CNPJ para ter acesso as outras funções. <a href="alterar-cadastro.php" class="alert-link">Insira já seu CNPJ</a> E após terá acesso ao sistema.
+									<strong>CNPJ não inserido.</strong> Por favor insira o CNPJ para ter acesso as demais funções. <a href="alterar-cadastro.php" class="alert-link">Insira já seu CNPJ</a> para ter acesso total ao sistema.
 								</div>
                             </section>
 						</div>

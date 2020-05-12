@@ -113,23 +113,77 @@
 					<header class="page-header">
 						<h2>Painel de Controle</h2>
 					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.php">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Painel de Controle</span></li>
-							</ol>
-					
-							<a class="sidebar-right-toggle"></a>
-						</div>
 					</header>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<section class="panel">
-
+							<h2>Tabela de restrição de modalidades</h2>
+							<div class="table-responsive">
+								<table class="table table-bordered mb-none center">
+									<thead>
+										<tr>
+											<th>Atlética:</th>
+											<th colspan="12">Atlética Vira lata</th>
+										</tr>
+										<tr>
+											<th>Modalidades</th>
+											<th>Atletismo</th>
+											<th>BF</th>
+											<th>BM</th>
+											<th>VF</th>
+											<th>VF</th>
+											<th>VM</th>
+											<th>FC</th>
+											<th>FF</th>
+											<th>FM</th>
+											<th>HF</th>
+											<th>HM</th>
+											<th>JJF</th>
+											<th>JJM</th>
+											<th>JM</th>
+											<th>NATAÇÃO</th>
+											<th>PF</th>
+											<th>PM</th>
+											<th>TMF</th>
+											<th>TMM</th>
+											<th>TCF</th>
+											<th>TCM</th>
+											<th>BATÉRIA</th>
+											<th>CHEER</th>
+											<th>XADREX</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Atletismo</td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
                             </section>
 						</div>
 					</div>
