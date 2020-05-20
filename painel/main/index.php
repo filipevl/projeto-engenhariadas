@@ -127,7 +127,11 @@
 					<div class="row">
 						<div class="col-md-6">
 							<section class="panel">
-								
+								<div class="alert alert-info">
+									<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+									<strong>Atlética x se cadastrou</strong> Valide o cadastro <a href="atleticas-inscritas.php" class="alert-link">Para que ele tenha acesso</a>, ao sistema.
+									<!-- O back deve no lugar de x colocar no nome da atlética e redirecionar para o botão de validar cnpj -->
+								</div>
                             </section>
 						</div>
 					</div>
