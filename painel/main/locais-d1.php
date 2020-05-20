@@ -84,16 +84,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="header-right">
-					<ul class="notifications">
-						<li>
-							<a href="validar.php" class="dropdown-toggle notification-icon">
-								<i class="fa fa-tasks"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
@@ -106,114 +96,116 @@
 						<h2>Modalidades</h2>
 					</header>
                     <div class="row">
-                        <div class="col-md-12">
-                            <section class="panel form-wizard" id="w4">
-                                <header class="panel-heading">
-                                    <h2 class="panel-title">Cadastrar Local</h2>
-                                </header>
-                                <div class="panel-body">
-                                    <div class="wizard-progress wizard-progress-lg">
-                                        <div class="steps-progress">
-                                            <div class="progress-indicator"></div>
+                        <section class="panel">
+                            <div class="col-md-12">
+                                <section class="panel form-wizard" id="w4">
+                                    <header class="panel-heading">
+                                        <h2 class="panel-title">Cadastrar Local</h2>
+                                    </header>
+                                    <div class="panel-body">
+                                        <div class="wizard-progress wizard-progress-lg">
+                                            <div class="steps-progress">
+                                                <div class="progress-indicator"></div>
+                                            </div>
+                                            <ul class="wizard-steps">
+                                                <li class="active">
+                                                    <a href="#w4-account" data-toggle="tab"><span>1</span>Nome do local</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#w4-profile" data-toggle="tab"><span>2</span>Disponibilidade</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#w4-billing" data-toggle="tab"><span>3</span>Modalidades</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#w4-confirm" data-toggle="tab"><span>4</span>Confirmação</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="wizard-steps">
-                                            <li class="active">
-                                                <a href="#w4-account" data-toggle="tab"><span>1</span>Nome do local</a>
+                        
+                                        <form class="form-horizontal" novalidate="novalidate">
+                                            <div class="tab-content">
+                                                <div id="w4-account" class="tab-pane active">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label" for="w4-username">Nome do local: </label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" name="nome_do_local" id="w4-username" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="w4-profile" class="tab-pane">
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Hora inicial</label>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="fa fa-clock-o"></i>
+                                                                </span>
+                                                                <input type="text" data-plugin-timepicker="" class="form-control" data-plugin-options="{ &quot;minuteStep&quot;: 15 }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Hora final</label>
+                                                        <div class="col-md-6">
+                                                            <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    <i class="fa fa-clock-o"></i>
+                                                                </span>
+                                                                <input type="text" data-plugin-timepicker="" class="form-control" data-plugin-options="{ &quot;minuteStep&quot;: 15 }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="w4-billing" class="tab-pane">
+                                                    <div class="form-group">
+                                                        <label class="col-md-3 control-label">Selecione uma modalidade</label>
+                                                        <div class="col-md-6">
+                                                            <div class="btn-group">
+                                                                <select class="form-control" multiple="multiple" data-plugin-multiselect data-multiselect-toggle-all="true" id="ms_example7">
+                                                                    <!-- 
+                                                            Buscar as modalidades e echo: <option value="$id">$nome_da_modalidade</option>
+                                                                    -->
+                                                                    <option value="cheese">Cheese</option>
+                                                                    <option value="tomatoes">Tomatoes</option>
+                                                                    <option value="mozarella">Mozzarella</option>
+                                                                    <option value="mushrooms">Mushrooms</option>
+                                                                    <option value="pepperoni">Pepperoni</option>
+                                                                    <option value="onions">Onions</option> 
+                                                                </select>
+                                                                <button id="ms_example7-toggle" class="btn btn-primary">Todas modalidades</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="w4-confirm" class="tab-pane">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label" for="w4-email">Digite sua senha:</label>
+                                                        <!-- Validar senha, caso positivo inserir local no banco -->
+                                                        <div class="col-sm-9">
+                                                            <input type="password" class="form-control" name="password" id="w4-email" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <ul class="pager">
+                                            <li class="previous disabled">
+                                                <a><i class="fa fa-angle-left"></i> Voltar</a>
                                             </li>
-                                            <li>
-                                                <a href="#w4-profile" data-toggle="tab"><span>2</span>Disponibilidade</a>
+                                            <li class="finish hidden pull-right">
+                                                <a>Finalizar</a>
                                             </li>
-                                            <li>
-                                                <a href="#w4-billing" data-toggle="tab"><span>3</span>Modalidades</a>
-                                            </li>
-                                            <li>
-                                                <a href="#w4-confirm" data-toggle="tab"><span>4</span>Confirmação</a>
+                                            <li class="next">
+                                                <a>Próximo <i class="fa fa-angle-right"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                    
-                                    <form class="form-horizontal" novalidate="novalidate">
-                                        <div class="tab-content">
-                                            <div id="w4-account" class="tab-pane active">
-                                                <div class="form-group">
-                                                    <label class="col-sm-3 control-label" for="w4-username">Nome do local: </label>
-                                                    <div class="col-sm-9">
-                                                        <input type="text" class="form-control" name="nome_do_local" id="w4-username" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="w4-profile" class="tab-pane">
-                                                <div class="form-group">
-                                                    <label class="col-md-3 control-label">Hora inicial</label>
-                                                    <div class="col-md-6">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="fa fa-clock-o"></i>
-                                                            </span>
-                                                            <input type="text" data-plugin-timepicker="" class="form-control" data-plugin-options="{ &quot;minuteStep&quot;: 15 }">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-3 control-label">Hora final</label>
-                                                    <div class="col-md-6">
-                                                        <div class="input-group">
-                                                            <span class="input-group-addon">
-                                                                <i class="fa fa-clock-o"></i>
-                                                            </span>
-                                                            <input type="text" data-plugin-timepicker="" class="form-control" data-plugin-options="{ &quot;minuteStep&quot;: 15 }">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="w4-billing" class="tab-pane">
-                                                <div class="form-group">
-                                                    <label class="col-md-3 control-label">Selecione uma modalidade</label>
-                                                    <div class="col-md-6">
-                                                        <div class="btn-group">
-                                                            <select class="form-control" multiple="multiple" data-plugin-multiselect data-multiselect-toggle-all="true" id="ms_example7">
-                                                                <!-- 
-                                                        Buscar as modalidades e echo: <option value="$id">$nome_da_modalidade</option>
-                                                                -->
-                                                                <option value="cheese">Cheese</option>
-                                                                <option value="tomatoes">Tomatoes</option>
-                                                                <option value="mozarella">Mozzarella</option>
-                                                                <option value="mushrooms">Mushrooms</option>
-                                                                <option value="pepperoni">Pepperoni</option>
-                                                                <option value="onions">Onions</option> 
-                                                            </select>
-                                                            <button id="ms_example7-toggle" class="btn btn-primary">Todas modalidades</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="w4-confirm" class="tab-pane">
-                                                <div class="form-group">
-                                                    <label class="col-sm-3 control-label" for="w4-email">Digite sua senha:</label>
-                                                    <!-- Validar senha, caso positivo inserir local no banco -->
-                                                    <div class="col-sm-9">
-                                                        <input type="password" class="form-control" name="password" id="w4-email" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="panel-footer">
-                                    <ul class="pager">
-                                        <li class="previous disabled">
-                                            <a><i class="fa fa-angle-left"></i> Voltar</a>
-                                        </li>
-                                        <li class="finish hidden pull-right">
-                                            <a>Finalizar</a>
-                                        </li>
-                                        <li class="next">
-                                            <a>Próximo <i class="fa fa-angle-right"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </section>
-                        </div>
+                                </section>
+                            </div>
+                        </section>
                     </div>
                 </section>
 			</div>

@@ -85,16 +85,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="header-right">
-					<ul class="notifications">
-						<li>
-							<a href="validar.php" class="dropdown-toggle notification-icon">
-								<i class="fa fa-tasks"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
@@ -110,22 +100,9 @@
 				<section role="main" class="content-body">
 					<header class="page-header">
 						<h2>Painel de Controle</h2>
-					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.php">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Painel de Controle</span></li>
-							</ol>
-					
-							<a class="sidebar-right-toggle"></a>
-						</div>
 					</header>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<section class="panel">
 
                             </section>

@@ -84,15 +84,6 @@
 					</div>
 				</div>
 
-				<div class="header-right">
-					<ul class="notifications">
-						<li>
-							<a href="validar.php" class="dropdown-toggle notification-icon">
-								<i class="fa fa-tasks"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
@@ -108,19 +99,6 @@
 				<section role="main" class="content-body">
 					<header class="page-header">
 						<h2>Atléticas inscritas</h2>
-
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.html">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Atléticas inscritas</span></li>
-							</ol>
-
-							<a class="sidebar-right-toggle" ></a>
-						</div>
 					</header>
 					<div class="form-group">
 						<label class="col-md-3 control-label">Escolha sua instituição: <span class="required">*</span></label>

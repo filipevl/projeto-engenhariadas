@@ -86,6 +86,12 @@ input {
 	border: none;
 }
 
+.input-styled {
+  outline: none;
+  border: none;
+  height: 3px;
+}
+
 textarea {
   outline: none;
   border: none;

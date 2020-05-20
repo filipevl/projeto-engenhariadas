@@ -84,16 +84,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="header-right">
-					<ul class="notifications">
-						<li>
-							<a href="validar.php" class="dropdown-toggle notification-icon">
-								<i class="fa fa-tasks"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
@@ -109,44 +99,61 @@
 				<section role="main" class="content-body">
 					<header class="page-header">
 						<h2>Chaveamento</h2>
-					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.php">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li><span>Chaveamento</span></li>
-							</ol>
-					
-							<a class="sidebar-right-toggle"></a>
-						</div>
 					</header>
 					<div class="row">
 						<div class="col-md-12">
-							<section class="panel">
-								<form action="#">
-									<select class="form-control input-sm mb-md">
-										<option>Dia 1</option>
-										<option>Dia 2</option>
-										<option>Dia 3</option>
-										<option>Dia 4</option>
-									</select>
-								</form>
-							</section>
 							<section class="panel">
 								<header class="panel-heading">
 									<h2 class="panel-title">Chaveamento</h2>
 								</header>
 								<div class="panel-body">
-									<table class="table table-bordered table-striped mb-none" id="datatable-tabletools" data-swf-path="assets/vendor/jquery-datatables/extras/TableTools/swf/copy_csv_xls_pdf.swf">
+									<table class="table table-bordered table-striped mb-none center" id="datatable-tabletools" data-swf-path="assets/vendor/jquery-datatables/extras/TableTools/swf/copy_csv_xls_pdf.swf">
 										<thead>
+											<form class="form-control" action="#">
+												<tr>
+													<th>
+														Dia: 
+														<select class="form-control" data-plugin-multiselect="" >
+															<option value="masculino">1</option>
+															<option value="feminino" selected="">2</option>
+														</select>
+													</th>
+
+													<th>
+														Serie: 
+														<select class="form-control" data-plugin-multiselect="" id="">
+															<option value="masculino">A</option>
+															<option value="feminino" selected="">B</option>
+														</select>
+													</th>
+
+													<th colspan="3">
+														Modalidade:
+														<select class="form-control" data-plugin-multiselect="" id="">
+															<option value="masculino">Volei - Masculino</option>
+															<option value="feminino" selected="">Volei - Feminino</option>
+														</select>
+													</th>
+													
+													<th colspan="2">
+														Universidade:
+														<select class="form-control" data-plugin-multiselect="" id="">
+															<option value="masculino">UFV</option>
+															<option value="feminino" selected="">CRP</option>
+														</select>
+													</th>
+
+													<th style="border-left: none;"> 
+														<button class="btn-buscar" type="submit">Buscar</button>
+													</th>
+												</tr>
+												
+											</form>
+											
 											<tr>
 												<th>Código de Confronto</th>
 												<th>Série</th>
 												<th>Modalidade</th>
-												<th class="hidden-phone">Sexo</th>
 												<th class="hidden-phone">Time A</th>
 												<th class="hidden-phone">Time B</th>
 												<th class="hidden-phone">Local</th>
@@ -159,12 +166,11 @@
 												<td>001</td>
 												<td>A</td>
 												<td>Basquete</td>
-												<td class="center hidden-phone">Masculino</td>
 												<td class="center hidden-phone">UFV</td>
 												<td class="center hidden-phone">UFVJM</td>
 												<td class="center hidden-phone">Local X</td>
-												<td class="center hidden-phone">8:00</td>
-												<td class="center hidden-phone">9:00</td>
+												<td class="center hidden-phone"><input class="input-styled" type="time" value="14:30"></td>
+												<td class="center hidden-phone"><input class="input-styled" type="time" value="15:30"></td>
 											</tr>
 										</tbody>
 									</table>

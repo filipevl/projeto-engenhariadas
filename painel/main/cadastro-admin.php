@@ -79,16 +79,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="header-right">
-					<ul class="notifications">
-						<li>
-							<a href="validar.php" class="dropdown-toggle notification-icon">
-								<i class="fa fa-tasks"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
 				<!-- end: search & user box -->
 			</header>
 			<!-- end: header -->
@@ -103,20 +93,6 @@
 				<section role="main" class="content-body">
 					<header class="page-header">
 						<h2>Cadastro de usuários</h2>
-					
-						<div class="right-wrapper pull-right">
-							<ol class="breadcrumbs">
-								<li>
-									<a href="index.php">
-										<i class="fa fa-home"></i>
-									</a>
-								</li>
-								<li>
-									<span>Cadastro de usuários administradores</span>
-								</li>
-							</ol>
-							<a class="sidebar-right-toggle" ></a>
-						</div>
 					</header>
 
 					<!-- start: page -->

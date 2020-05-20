@@ -85,16 +85,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="header-right">
-					<ul class="notifications">
-						<li>
-							<a href="validar.php" class="dropdown-toggle notification-icon">
-								<i class="fa fa-tasks"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
 				<!-- end: search & user box -->
 			</header>
 			<!-- fim: header -->
@@ -113,8 +103,8 @@
 					</header>
 					<div class="row">
 						<div class="col-md-12">
-							<button class="btnAdd"><a href="criar-modalidade.php">Cadastrar modalidade</a></button>
-							<button class="btnBlue"><a href="editar-modalidade.php">Editar modalidade</a></button>
+							<button class="btnAdd"><a style="color:white;" href="criar-modalidade.php">Cadastrar modalidade</a></button>
+							<button class="btnBlue"><a style="color:white;" href="editar-modalidade.php">Editar modalidade</a></button>
 
 							<div class="panel-body">
 								<div class="table-responsive">
