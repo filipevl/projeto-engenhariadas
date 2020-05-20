@@ -27,9 +27,8 @@
 		<link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
 
 		<!-- Specific Page Vendor CSS -->
-		<link rel="stylesheet" href="../assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
-		<link rel="stylesheet" href="../assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
-		<link rel="stylesheet" href="../assets/vendor/morris/morris.css" />
+		<link rel="stylesheet" href="../assets/vendor/select2/select2.css" />
+		<link rel="stylesheet" href="../assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="../assets/stylesheets/theme.css" />
@@ -109,7 +108,7 @@
 				<!-- Inicio da seção main(parte de exibição das paginas do painel) -->
 				<section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Painel de Controle</h2>
+						<h2>Chaveamento</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
@@ -118,17 +117,59 @@
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
-								<li><span>Painel de Controle</span></li>
+								<li><span>Chaveamento</span></li>
 							</ol>
 					
 							<a class="sidebar-right-toggle"></a>
 						</div>
 					</header>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<section class="panel">
-
-                            </section>
+								<form action="#">
+									<select class="form-control input-sm mb-md">
+										<option>Dia 1</option>
+										<option>Dia 2</option>
+										<option>Dia 3</option>
+										<option>Dia 4</option>
+									</select>
+								</form>
+							</section>
+							<section class="panel">
+								<header class="panel-heading">
+									<h2 class="panel-title">Chaveamento</h2>
+								</header>
+								<div class="panel-body">
+									<table class="table table-bordered table-striped mb-none" id="datatable-tabletools" data-swf-path="assets/vendor/jquery-datatables/extras/TableTools/swf/copy_csv_xls_pdf.swf">
+										<thead>
+											<tr>
+												<th>Código de Confronto</th>
+												<th>Série</th>
+												<th>Modalidade</th>
+												<th class="hidden-phone">Sexo</th>
+												<th class="hidden-phone">Time A</th>
+												<th class="hidden-phone">Time B</th>
+												<th class="hidden-phone">Local</th>
+												<th class="hidden-phone">Horário de início</th>
+												<th class="hidden-phone">Horário de término</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="gradeX">
+												<td>001</td>
+												<td>A</td>
+												<td>Basquete</td>
+												<td class="center hidden-phone">Masculino</td>
+												<td class="center hidden-phone">UFV</td>
+												<td class="center hidden-phone">UFVJM</td>
+												<td class="center hidden-phone">Local X</td>
+												<td class="center hidden-phone">8:00</td>
+												<td class="center hidden-phone">9:00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
 						</div>
 					</div>
 				</section>
@@ -143,6 +184,12 @@
 		<script src="../assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="../assets/vendor/magnific-popup/magnific-popup.js"></script>
 		<script src="../assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+		<!-- Specific Page Vendor -->
+		<script src="../assets/vendor/select2/select2.js"></script>
+		<script src="../assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+		<script src="../assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+		<script src="../assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
 		<script src="../assets/javascripts/theme.js"></script>
@@ -152,6 +199,11 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="../assets/javascripts/theme.init.js"></script>
+
+		<!-- Examples -->
+		<script src="../assets/javascripts/tables/examples.datatables.default.js"></script>
+		<script src="../assets/javascripts/tables/examples.datatables.row.with.details.js"></script>
+		<script src="../assets/javascripts/tables/examples.datatables.tabletools.js"></script>
 	</body>
 </html>
 

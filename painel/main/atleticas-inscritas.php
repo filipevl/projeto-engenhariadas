@@ -259,39 +259,637 @@
 						</div>
 					</section>
 
-					<!-- Lista geral de atletas -->
+					<!-- Lista individuais -->
 					<section class="panel">				
-							<h2>Listas individuais</h2>
+						<h2>Listas individuais</h2>
+						<!-- Todas essas listas devem ser preenchidas com os dados do banco -->
 						
-						<div class="panel-body">
-							<div class="table-responsive">
-								<table class="table table-bordered table-striped table-condensed mb-none tableModalidades">
-									<thead>
-										<tr>
-											<th>Nome</th>
-											<th>Modalidades inscritas</th>
-											<th>RG</th>
-										</tr>
-									</thead>
-									<tbody>
-										<!-- Buscar no banco o cadastro dos atletas da instituição e exibir
-										dica: laço de repetição para procurar todos os atletas
-										armazenar nas variáveis e dentro do laço -> echo:
-										<tr>
-											<td>$nome</td>
-											<td>$mod-inc</td>
-											<td>$rg</td>
-										</tr>	
-										-->
-										<tr>
-											<td>Antonio</td>
-											<td>Futsal,Futebol,Peteca</td>
-											<td>AA99999999</td>
-										</tr>										
-									</tbody>
-								</table>
-							</div>
+						<!-- Atletismo feminino -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="12">Atletismo Feminino</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th colspan="2">Atlética Vira lata</th>
+										<th colspan="9">Provas</th>
+
+									</tr>
+									<tr>
+										<th>Nº membros</th>
+										<th>Nome</th>
+										<th>RG</th>
+										<th>100m</th>
+										<th>200m</th>
+										<th>400m</th>
+										<th>800m</th>
+										<th>1500m</th>
+										<th>5000m</th>
+										<th>Arremesso</th>
+										<th>Salto em Ext</th>
+										<th>4x100</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Fulano de tal</td>
+										<td>12346789023</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td><strong>*</strong></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
+
+						<!-- Atletismo Masculino -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="12">Atletismo Masculino</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th colspan="2">Atlética Vira lata</th>
+										<th colspan="9">Provas</th>
+
+									</tr>
+									<tr>
+										<th>Nº membros</th>
+										<th>Nome</th>
+										<th>RG</th>
+										<th>100m</th>
+										<th>200m</th>
+										<th>400m</th>
+										<th>800m</th>
+										<th>1500m</th>
+										<th>5000m</th>
+										<th>Arremesso</th>
+										<th>Salto em Ext</th>
+										<th>4x100</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Fulano de tal</td>
+										<td>12346789023</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td><strong>*</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Judô Masculino -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="2">Judô Masculino</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th>Atlética Vira lata</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th colspan="2">Peso Pena (Até 66kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Leve (+66kg até 73Kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Médio (+73Kg até 81Kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Meio-Pesado (+90Kg até 100kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Pesado (+100Kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>				
+
+						<!-- Jiu-Jitsu Feminino -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="2">Jiu-Jitsu Feminino</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th>Atlética Vira lata</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th colspan="2">Peso Pena (Até 53kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Leve (+53kg até 59Kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Médio (+59Kg até 65Kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Meio-Pesado (+65Kg até 71kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Pesado (+71Kg até 77kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Pesadíssimo(+77kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+									
+
+								</tbody>
+								
+									
+								
+							</table>
+						</div>
+
+						<!-- Jit-Jitsu Masculino -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="2">Jiu-Jitsu Masculino</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th>Atlética Vira lata</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th colspan="2">Peso Pena (Até 53kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Leve (+53kg até 59Kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Médio (+59Kg até 65Kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Meio-Pesado (+65Kg até 71kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Pesado (+71Kg até 77kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+
+									<tr>
+										<th colspan="2">Peso Pesadíssimo(+77kg)</th>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td>Fulano de tal</td>
+									</tr>
+									<tr>
+										<td>Atleta</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Reserva</td>
+										<td>-</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<!-- Natação Feminino-->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="12">Natação Feminino</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th colspan="4">Atlética Vira lata</th>
+										<th colspan="8"></th>
+										
+
+									</tr>
+									<tr>
+										<th>Divisão</th>
+										<th colspan="4">1</th>
+										<th colspan="8"></th>
+									</tr>
+									<tr>
+										<th>Cidade</th>
+										<th colspan="2">RP/MG</th>
+										<th colspan="10">Provas</th>
+									</tr>
+									<tr>
+										<th>Nº membros</th>
+										<th>Nome</th>
+										<th>Data de nasc</th>
+										<th>50m Livre</th>
+										<th>100m Livre</th>
+										<th>200m Livre</th>
+										<th>50m Costas</th>
+										<th>100m Costas</th>
+										<th>50m Borbo</th>
+										<th>100m Norbo</th>
+										<th>50m Peito</th>
+										<th>100m Peito</th>
+										<th>100m Medley</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Fulano de tal</td>
+										<td>12/01/1999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td><strong>*</strong></td>
+										<td></td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Responsavel:</th>
+										<th colspan="2">Fulano da Silva</th>
+										<th colspan="2">Telefone: (31) - 12345-5422</th>
+										<th colspan="8">Revezamento</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<!-- Natação Masculina -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="12">Natação Masculino</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th colspan="4">Atlética Vira lata</th>
+										<th colspan="8"></th>
+										
+
+									</tr>
+									<tr>
+										<th>Divisão</th>
+										<th colspan="4">1</th>
+										<th colspan="8"></th>
+									</tr>
+									<tr>
+										<th>Cidade</th>
+										<th colspan="2">RP/MG</th>
+										<th colspan="10">Provas</th>
+									</tr>
+									<tr>
+										<th>Nº membros</th>
+										<th>Nome</th>
+										<th>Data de nasc</th>
+										<th>50m Livre</th>
+										<th>100m Livre</th>
+										<th>200m Livre</th>
+										<th>50m Costas</th>
+										<th>100m Costas</th>
+										<th>50m Borbo</th>
+										<th>100m Norbo</th>
+										<th>50m Peito</th>
+										<th>100m Peito</th>
+										<th>100m Medley</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Fulano de tal</td>
+										<td>12/01/1999</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td><strong>*</strong></td>
+										<td></td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Responsavel:</th>
+										<th colspan="2">Fulano da Silva</th>
+										<th colspan="2">Telefone: (31) - 12345-5422</th>
+										<th colspan="8">Revezamento</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+							
+						<!-- Cheeleader -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="3">Desáfio de Cheerleading - Engenhariadas Mineiro 2020</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th colspan="2">Atlética Vira lata</th>
+									</tr>
+									<tr>
+										<th>Nome da Batéria:</th>
+										<th colspan="2"> Atlética Vira lata</th>
+									</tr>
+									<tr>
+										<th>Cidade / Estado:</th>
+										<th colspan="2">RP/MG</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>Nome</td>
+										<td>RG</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>Fulano de Tal</td>
+										<td>Mg-12.234.231</td>
+									</tr>
+								</tbody>	
+							</table>
+						</div>
+
+						<!-- Bateria -->
+						<div class="table-responsive">
+							<table class="table table-bordered mb-none center">
+								<thead>
+									<tr>
+										<th colspan="3">Desáfio de Batéria - Engenhariadas Mineiro 2020</th>
+									</tr>
+									<tr>
+										<th>Atlética:</th>
+										<th colspan="2">Atlética Vira lata</th>
+									</tr>
+									<tr>
+										<th>Nome da Batéria:</th>
+										<th colspan="2"> Atlética Vira lata</th>
+									</tr>
+									<tr>
+										<th>Cidade / Estado:</th>
+										<th colspan="2">RP/MG</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td>Nome</td>
+										<td>RG</td>
+									</tr>
+									<tr>
+										<td>Mestre / Diretor</td>
+										<td>Fulano de Tal</td>
+										<td>Mg-12.234.231</td>
+									</tr>
+								</tbody>	
+							</table>
+						</div>
+
+
 					</section>
 
 					<!-- Lista geral de atletas -->

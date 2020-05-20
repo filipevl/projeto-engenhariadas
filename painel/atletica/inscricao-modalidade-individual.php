@@ -325,10 +325,7 @@
 										</tr>
 									</tbody>
 								</table>
-							</div>
-							
-
-							
+							</div>				
 
 							<h3>Jiu-Jitsu Feminino</h3>
 							<div class="table-responsive">
@@ -732,7 +729,7 @@
 								</table>
 							</div>
 
-							<h3>Batéria</h3>
+							<h3>Bateria</h3>
 
 							<div class="table-responsive">
 								<table class="table table-bordered mb-none center">
